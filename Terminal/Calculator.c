@@ -1,13 +1,9 @@
 #include <stdio.h>
 
-int main()
-{
+int main() {
     int num1 , num2;
-    printf("Enter The frst Number :\n");
+    printf("Enter The first Number : ");
     scanf("%d", &num1);
-
-    printf("The frst Number is %d :\n", num1);
-
-    
+    printf("The first Number is : %d \n", num1);
     return 0;
 }
