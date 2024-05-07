@@ -9,9 +9,10 @@ int main() {
     printf("Enter The Second Number : ");
     scanf("%d",&num2);
 
-    printf("Enter The Operator : ");
+    printf("Enter One Of The Operators : + | / | * | - : ");
     scanf("%s",&opr);
 
+    
     
     return 0;
 }
