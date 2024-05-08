@@ -12,6 +12,9 @@ int main() {
     printf("Enter One Of The Operators : + | / | * | - : ");
     scanf("%s",&opr);
 
+    if(opr = '+'){
+        printf("Result = %d", num1 + num2);
+    }
     
     
     return 0;
