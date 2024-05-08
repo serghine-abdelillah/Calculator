@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num1 , num2;
+    int num1 , num2, result;
     char opr;
     printf("Enter The first Number : ");
     scanf("%d", &num1);
@@ -9,12 +9,14 @@ int main() {
     printf("Enter The Second Number : ");
     scanf("%d",&num2);
 
-    printf("Enter One Of The Operators : + | / | * | - : ");
-    scanf("%s",&opr);
+    // printf("Enter One Of The Operators : + | / | * | - : ");
+    // scanf("%s",&opr);
 
-    if(opr = '+'){
-        printf("Result = %d", num1 + num2);
-    }
+    result = num1 + num2;
+    printf("Result = %d", result);
+
+    
+    
     
     
     return 0;
