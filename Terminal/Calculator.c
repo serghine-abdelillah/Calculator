@@ -13,6 +13,9 @@ int main() {
     // scanf("%s",&opr);
 
     result = num1 + num2;
+    printf("Result = %d\n", result);
+
+    result = num1 - num2 ;
     printf("Result = %d", result);
 
     
