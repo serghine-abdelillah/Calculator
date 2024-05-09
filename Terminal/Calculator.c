@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num1 , num2, result;
+    float num1 , num2, result;
     char opr;
     printf("Enter The first Number : ");
     scanf("%d", &num1);
@@ -16,7 +16,10 @@ int main() {
     printf("Result = %d\n", result);
 
     result = num1 - num2 ;
-    printf("Result = %d", result);
+    printf("Result = %d\n", result);
+
+    result = num1 / num2;
+    printf("Result : %d", result);
 
     
     
