@@ -19,6 +19,8 @@ int main() {
     printf("Result = %.2f\n", result);
 
     result = num1 * num2;
+    printf("Result : %.2f", result);
+    
     result = num1 / num2;
     printf("Result : %.2f", result);
 
