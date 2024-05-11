@@ -13,10 +13,10 @@ int main() {
     // scanf("%s",&opr);
 
     result = num1 + num2;
-    printf("Result = %.2f\n", result);
+    printf("Result = %d\n", result);
 
     result = num1 - num2 ;
-    printf("Result = %.2f\n", result);
+    printf("Result = %d\n", result);
 
     result = num1 * num2;
     printf("Result : %.2f", result);
