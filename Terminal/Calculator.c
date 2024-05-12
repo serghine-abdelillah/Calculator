@@ -9,8 +9,8 @@ int main() {
     printf("Enter The Second Number : ");
     scanf("%d",&num2);
 
-    // printf("Enter One Of The Operators : + | / | * | - : ");
-    // scanf("%s",&opr);
+    printf("Enter One Of The Operators : + | / | * | - : ");
+    scanf(" %c",&opr);
 
     result = num1 + num2;
     printf("Result = %d\n", result);
@@ -19,7 +19,7 @@ int main() {
     printf("Result = %d\n", result);
 
     result = num1 * num2;
-    printf("Result : %d", result);
+    printf("Result : %d\n", result);
     
     result = num1 / num2;
     printf("Result : %d", result);
