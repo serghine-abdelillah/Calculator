@@ -19,10 +19,10 @@ int main() {
     printf("Result = %d\n", result);
 
     result = num1 * num2;
-    printf("Result : %.2f", result);
+    printf("Result : %d", result);
     
     result = num1 / num2;
-    printf("Result : %.2f", result);
+    printf("Result : %d", result);
 
     
     
