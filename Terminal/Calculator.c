@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int num1 , num2, result;
+    double num1 , num2, result;
     char opr;
     printf("Enter The first Number : ");
-    scanf("%.2lf", &num1);
+    scanf("%lf", &num1);
 
     printf("Enter The Second Number : ");
-    scanf("%.2lf",&num2);
+    scanf("%lf",&num2);
 
     printf("Enter One Of The Operators : + | / | * | - : ");
     scanf(" %c",&opr);
