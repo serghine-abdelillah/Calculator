@@ -11,13 +11,13 @@ int main() {
 
     printf("Enter One Of The Operators : + | / | * | - : ");
     scanf(" %c",&opr);
-    if (/* condition */)
+    if (opr == '+')
     {
-        /* code */
+        result = num1 + num2;
+        printf("Result = %.2lf\n", result);
     }
     
-    result = num1 + num2;
-    printf("Result = %.2lf\n", result);
+    
 
     result = num1 - num2 ;
     printf("Result = %.2lf\n", result);
