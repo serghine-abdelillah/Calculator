@@ -26,6 +26,11 @@ int main() {
         result = num1 * num2;
         printf("Result : %.2lf\n", result);
     }
+    if (opr == '*')
+    {
+        result = num1 * num2;
+        printf("Result : %.2lf\n", result);
+    }
     
     
     result = num1 / num2;
