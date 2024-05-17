@@ -15,7 +15,7 @@ int main() {
         result = num1 + num2;
         printf("Result = %.2lf\n", result);
     }
-    if (opr == '-'){
+    else if (opr == '-'){
         result = num1 - num2 ;
         printf("Result = %.2lf\n", result);
     }
