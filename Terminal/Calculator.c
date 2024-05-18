@@ -28,7 +28,15 @@ int main() {
         printf("Result : %.2lf\n", result);
     }
     
+    switch ()
+    {
+    case /* constant-expression */:
+        /* code */
+        break;
     
+    default:
+        break;
+    }
     
 
     return 0;
