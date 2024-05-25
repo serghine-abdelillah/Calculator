@@ -12,12 +12,8 @@ int main()
 
     printf("Enter One Of The Operators : + | / | * | - : ");
     scanf(" %c", &opr);
-    if (opr == '+')
-    {
-        result = num1 + num2;
-        printf("Result = %.2lf\n", result);
-    }
-    else if (opr == '-')
+
+    if (opr == '-')
     {
         result = num1 - num2;
         printf("Result = %.2lf\n", result);
@@ -37,6 +33,7 @@ int main()
     {
     case '+':
         result = num1 + num2;
+        printf("Result = %.2lf\n", result);
         break;
     case '-':
         result = num1 - num2;
