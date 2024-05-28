@@ -18,10 +18,9 @@ int main()
     }
     if (opr == '*')
     {
-        }
+    }
     if (opr == '/')
     {
-        
     }
 
     switch (opr)
