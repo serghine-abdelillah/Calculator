@@ -13,16 +13,6 @@ int main()
     printf("Enter One Of The Operators : + | / | * | - : ");
     scanf(" %c", &opr);
 
-    if (opr == '-')
-    {
-    }
-    if (opr == '*')
-    {
-    }
-    if (opr == '/')
-    {
-    }
-
     switch (opr)
     {
     case '+':
