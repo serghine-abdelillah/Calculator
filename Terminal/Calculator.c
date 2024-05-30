@@ -34,7 +34,7 @@ int main()
 
     default:
         break;
-    }
+    }k
 
     return 0;
 }
