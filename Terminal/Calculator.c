@@ -2,6 +2,7 @@
 
 int main()
 {
+
     double num1, num2, result;
     char opr;
     printf("Enter The first Number : ");
@@ -15,6 +16,7 @@ int main()
 
     switch (opr)
     {
+
     case '+':
         result = num1 + num2;
         printf("Result = %.2lf\n", result);
@@ -38,3 +40,4 @@ int main()
 
     return 0;
 }
+    
