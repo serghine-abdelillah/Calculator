@@ -14,6 +14,11 @@ int main()
     printf("Enter One Of The Operators : + | / | * | - : ");
     scanf(" %c", &opr);
 
+    while (/* condition */)
+    {
+        /* code */
+    }
+
     switch (opr)
     {
 
@@ -40,4 +45,3 @@ int main()
 
     return 0;
 }
-    
