@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main()
 {
 
     double num1, num2, result;
     char opr;
+    bool x = false;
     printf("Enter The first Number : ");
     scanf("%lf", &num1);
 
@@ -14,7 +16,7 @@ int main()
     printf("Enter One Of The Operators : + | / | * | - : ");
     scanf(" %c", &opr);
 
-    while (/* condition */)
+    while (x == true)
     {
         /* code */
     }
