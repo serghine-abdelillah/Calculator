@@ -7,7 +7,7 @@ int main()
     double num1, num2, result;
     char opr;
     bool x = false;
-    printf("Enter The first Number : ");
+
     scanf("%lf", &num1);
 
     printf("Enter The Second Number : ");
@@ -18,7 +18,7 @@ int main()
 
     while (x == true)
     {
-        /* code */
+        printf("Enter The first Number : ");
     }
 
     switch (opr)
