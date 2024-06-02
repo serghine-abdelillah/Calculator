@@ -6,7 +6,7 @@ int main()
 
     double num1, num2, result;
     char opr;
-    bool x = false;
+    bool x = true;
 
     scanf("%lf", &num1);
 
@@ -19,6 +19,7 @@ int main()
     while (x == true)
     {
         printf("Enter The first Number : ");
+        x = false;
     }
 
     switch (opr)
