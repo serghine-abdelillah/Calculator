@@ -8,11 +8,6 @@ int main()
     char opr;
     bool x = true;
 
-    
-
-    
-    scanf("%lf", &num2);
-
     printf("Enter One Of The Operators : + | / | * | - : ");
     scanf(" %c", &opr);
 
@@ -21,6 +16,7 @@ int main()
         printf("Enter The first Number : ");
         scanf("%lf", &num1);
         printf("Enter The Second Number : ");
+        scanf("%lf", &num2);
         x = false;
     }
 
