@@ -10,7 +10,7 @@ int main()
 
     
 
-    printf("Enter The Second Number : ");
+    
     scanf("%lf", &num2);
 
     printf("Enter One Of The Operators : + | / | * | - : ");
@@ -20,6 +20,7 @@ int main()
     {
         printf("Enter The first Number : ");
         scanf("%lf", &num1);
+        printf("Enter The Second Number : ");
         x = false;
     }
 
