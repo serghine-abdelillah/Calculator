@@ -8,7 +8,7 @@ int main()
     char opr;
     bool x = true;
 
-    printf("Enter One Of The Operators : + | / | * | - : ");
+    
     scanf(" %c", &opr);
 
     while (x == true)
@@ -17,6 +17,7 @@ int main()
         scanf("%lf", &num1);
         printf("Enter The Second Number : ");
         scanf("%lf", &num2);
+        printf("Enter One Of The Operators : + | / | * | - : ");
         x = false;
     }
 
