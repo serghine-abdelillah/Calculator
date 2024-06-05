@@ -16,11 +16,11 @@ int main()
         scanf("%lf", &num2);
         printf("Enter One Of The Operators : + | / | * | - : ");
         scanf(" %c", &opr);
-        x = false;
-    }
+        switch (opr)
+        {
 
-    switch (opr)
-    {
+            x = false;
+        }
 
     case '+':
         result = num1 + num2;
