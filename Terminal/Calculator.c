@@ -8,7 +8,7 @@ int main()
     char opr;
     bool x = true;
 
-        while (x == true)
+    while (x == true)
     {
         printf("Enter The first Number : ");
         scanf("%lf", &num1);
