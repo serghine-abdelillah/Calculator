@@ -34,12 +34,11 @@ int main()
             result = num1 / num2;
             printf("Result : %.2lf\n", result);
             break;
+        default:
+            break;
+
             x = false;
         }
-
-    default:
-        break;
     }
-
     return 0;
 }
