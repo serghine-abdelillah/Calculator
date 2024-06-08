@@ -30,13 +30,12 @@ int main()
             result = num1 * num2;
             printf("Result : %.2lf\n", result);
             break;
+        case '/':
+            result = num1 / num2;
+            printf("Result : %.2lf\n", result);
+            break;
             x = false;
         }
-
-    case '/':
-        result = num1 / num2;
-        printf("Result : %.2lf\n", result);
-        break;
 
     default:
         break;
