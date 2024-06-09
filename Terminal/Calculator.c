@@ -16,6 +16,8 @@ int main()
         scanf("%lf", &num2);
         printf("Enter One Of The Operators : + | / | * | - : ");
         scanf(" %c", &opr);
+        printf("QUIT : ");
+        scanf(" %c", &opr);
         switch (opr)
         {
         case '+':
