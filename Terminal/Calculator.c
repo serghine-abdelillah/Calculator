@@ -11,7 +11,10 @@ int main()
     while (x == true)
     {
 
-        printf("Enter The first Number : ");
+        printf("Addition  : A ");
+        printf("Addition  : A ");
+        printf("Addition  : A ");
+        printf("Addition  : A ");
         
         printf("Enter One Of The Operators : + | / | * | - : ");
         scanf(" %c", &opr);
