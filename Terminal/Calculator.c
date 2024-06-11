@@ -12,13 +12,12 @@ int main()
     {
 
         printf("Addition  : A ");
-        printf("Addition  : A ");
-        printf("Addition  : A ");
-        printf("Addition  : A ");
-        
+        printf("Soustraction  : A ");
+        printf("Multiply  : A ");
+        printf("Division  : A ");
+
         printf("Enter One Of The Operators : + | / | * | - : ");
         scanf(" %c", &opr);
-
 
         printf("Enter The first Number : ");
         scanf("%lf", &num1);
