@@ -11,10 +11,10 @@ int main()
     while (x == true)
     {
 
-        printf("Addition  : A ");
-        printf("Soustraction  : A ");
-        printf("Multiply  : A ");
-        printf("Division  : A ");
+        printf("Addition  : A/a ");
+        printf("Soustraction  : S/s ");
+        printf("Multiply  : M/m ");
+        printf("Division  : D/d ");
 
         printf("Enter One Of The Operators : + | / | * | - : ");
         scanf(" %c", &opr);
