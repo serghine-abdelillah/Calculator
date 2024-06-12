@@ -16,6 +16,9 @@ int main()
         printf("Multiply  : M/m ");
         printf("Division  : D/d ");
 
+        printf("QUIT : tap q|Q :");
+        scanf(" %c", &opr);
+        
         printf("Enter One Of The Operators : + | / | * | - : ");
         scanf(" %c", &opr);
 
@@ -23,8 +26,6 @@ int main()
         scanf("%lf", &num1);
         printf("Enter The Second Number : ");
         scanf("%lf", &num2);
-        printf("QUIT : tap q|Q :");
-        scanf(" %c", &opr);
         switch (opr)
         {
         case '+':
