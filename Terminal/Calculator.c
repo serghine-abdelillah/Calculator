@@ -18,7 +18,15 @@ int main()
 
         printf("QUIT : tap q|Q :");
         scanf(" %c", &opr);
-        
+        switch (choice)
+        {
+        case /* constant-expression */:
+            /* code */
+            break;
+
+        default:
+            break;
+        }
         printf("Enter One Of The Operators : + | / | * | - : ");
         scanf(" %c", &opr);
 
