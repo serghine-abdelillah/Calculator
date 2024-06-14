@@ -5,19 +5,19 @@ int main()
 {
 
     double num1, num2, result;
-    char opr;
+    char opr, choice;
     bool x = true;
 
     while (x == true)
     {
 
+        printf("Calculator : --- MENU ---\n");
         printf("Addition  : A/a ");
         printf("Soustraction  : S/s ");
         printf("Multiply  : M/m ");
         printf("Division  : D/d ");
-
         printf("QUIT : tap q|Q :");
-        scanf(" %c", &opr);
+        scanf(" %c", &choice);
         switch (choice)
         {
         case /* constant-expression */:
