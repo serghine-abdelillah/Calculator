@@ -20,7 +20,16 @@ int main()
         scanf(" %c", &choice);
         switch (choice)
         {
-        case /* constant-expression */:
+        case 'A' || 'a':
+            /* code */
+            break;
+        case 'S' || 's':
+            /* code */
+            break;
+        case "M" || "m":
+            /* code */
+            break;
+        case "D" || "d":
             /* code */
             break;
 
