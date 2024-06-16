@@ -18,24 +18,27 @@ int main()
         printf("Division  : D/d ");
         printf("QUIT : tap q|Q :");
         scanf(" %c", &choice);
-        switch (choice)
+        if (choice == "A" || choice == "a")
         {
-        case 'A' || 'a':
             /* code */
-            break;
-        case 'S' || 's':
-            /* code */
-            break;
-        case "M" || "m":
-            /* code */
-            break;
-        case "D" || "d":
-            /* code */
-            break;
-
-        default:
-            break;
         }
+        else if (/* condition */)
+        {
+            /* code */
+        }
+        else if (/* condition */
+        {
+            /* code */
+        }
+        else if (/* condition */)
+        {
+            /* code */
+        }
+        else
+        {
+            /* code */
+        }
+        
         printf("Enter One Of The Operators : + | / | * | - : ");
         scanf(" %c", &opr);
 
