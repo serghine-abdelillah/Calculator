@@ -22,7 +22,26 @@ int main()
         {
             /* code */
         }
-        else if (/* condition */)
+        else if (choice == "B" || choice == "b")
+        {
+            /* code */
+        }
+        else if (choice == "C" || choice == "c")
+        {
+            /* code */
+        }
+        else if (choice == "D" || choice == "d")
+        {
+            /* code */
+        }
+        else if (choice == "Q" || choice == "q")
+        {
+            x = false;
+        }
+        else
+        {
+            printf("Invalid Choice\n");
+        }
         {
             /* code */
         }
