@@ -45,7 +45,7 @@ int main()
         {
             /* code */
         }
-        else if (/* condition */
+        else if (/* condition */)
         {
             /* code */
         }
