@@ -12,10 +12,10 @@ int main()
     {
 
         printf("Calculator : --- MENU ---\n");
-        printf("Addition  : A/a ");
-        printf("Soustraction  : S/s ");
-        printf("Multiply  : M/m ");
-        printf("Division  : D/d ");
+        printf("Addition + : A/a ");
+        printf("Soustraction - : S/s ");
+        printf("Multiply * : M/m ");
+        printf("Division / : D/d ");
         printf("QUIT : tap q|Q :");
         scanf(" %c", &choice);
         if (choice == "A" || choice == "a")
