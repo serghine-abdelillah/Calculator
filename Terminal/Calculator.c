@@ -18,6 +18,11 @@ int main()
         printf("Division / : D/d ");
         printf("QUIT : tap q|Q :");
         scanf(" %c", &choice);
+        while (choice != "Q" || choice !="q"){
+        printf("Enter The first Number : ");
+        scanf("%lf", &num1);
+        printf("Enter The Second Number : ");
+        scanf("%lf", &num2);
         if (choice == "A" || choice == "a")
         {
             /* code */
@@ -57,14 +62,9 @@ int main()
         {
             /* code */
         }
-        
-        printf("Enter One Of The Operators : + | / | * | - : ");
-        scanf(" %c", &opr);
+        }
 
-        printf("Enter The first Number : ");
-        scanf("%lf", &num1);
-        printf("Enter The Second Number : ");
-        scanf("%lf", &num2);
+        
         switch (opr)
         {
         case '+':
