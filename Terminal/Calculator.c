@@ -47,23 +47,7 @@ int main()
         {
             printf("Invalid Choice\n");
         }
-        {
-            /* code */
         }
-        else if (/* condition */)
-        {
-            /* code */
-        }
-        else if (/* condition */)
-        {
-            /* code */
-        }
-        else
-        {
-            /* code */
-        }
-        }
-
         
         switch (opr)
         {
