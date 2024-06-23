@@ -25,9 +25,11 @@ int main()
         scanf("%lf", &num2);
         if (choice == "A" || choice == "a")
         {
-            /* code */
+            result = num1 + num2;
+            printf("Result = %.2lf\n", result);
+            break;
         }
-        else if (choice == "B" || choice == "b")
+        else if (choice == "S" || choice == "s")
         {
             /* code */
         }
@@ -52,9 +54,7 @@ int main()
         switch (opr)
         {
         case '+':
-            result = num1 + num2;
-            printf("Result = %.2lf\n", result);
-            break;
+            
         case '-':
             result = num1 - num2;
             printf("Result = %.2lf\n", result);
