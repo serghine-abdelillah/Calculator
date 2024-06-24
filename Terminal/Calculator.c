@@ -5,21 +5,18 @@ int main()
 {
 
     double num1, num2, result;
-    char opr, choice;
+    char choice;
     bool x = true;
 
-    while (x == true)
-    {
-
+    
         printf("Calculator : --- MENU ---\n");
-        printf("Addition + : A/a ");
-        printf("Soustraction - : S/s ");
-        printf("Multiply * : M/m ");
-        printf("Division / : D/d ");
-        printf("QUIT : tap q|Q :");
+        printf("Addition + : A/a \n");
+        printf("Soustraction - : S/s \n");
+        printf("Multiply * : M/m \n");
+        printf("Division / : D/d \n");
+        printf("QUIT : tap q|Q :\n");
         scanf(" %c", &choice);
-        while (choice != "Q" || choice != "q")
-        {
+        while (x){
             printf("Enter The first Number : ");
             scanf("%lf", &num1);
             printf("Enter The Second Number : ");
@@ -52,11 +49,7 @@ int main()
             {
                 x = false;
             }
-            else
-            {
-                printf("Invalid Choice\n");
-            }
         }
-    }
+    
     return 0;
 }
