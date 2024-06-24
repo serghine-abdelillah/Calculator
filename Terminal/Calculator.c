@@ -57,22 +57,6 @@ int main()
                 printf("Invalid Choice\n");
             }
         }
-
-        switch (opr)
-        {
-        case '+':
-
-        case '-':
-
-        case '*':
-
-        case '/':
-
-        case 'q' || 'Q':
-            break;
-        default:
-            break;
-        }
     }
     return 0;
 }
