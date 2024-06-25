@@ -8,8 +8,9 @@ int main()
     char choice;
     bool x = true;
 
-    
-        printf("Calculator : --- MENU ---\n");
+        while (true)
+        {
+            printf("Calculator : --- MENU ---\n");
         printf("Addition + : A/a \n");
         printf("Soustraction - : S/s \n");
         printf("Multiply * : M/m \n");
@@ -50,6 +51,9 @@ int main()
                 x = false;
             }
         }
+        }
+        
+        
     
     return 0;
 }
