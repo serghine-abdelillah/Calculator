@@ -27,10 +27,14 @@ int main()
             switch (choice)
             {
             case '+':
-                /* code */
+                result = num1 + num2;
+                printf("Result = %.2lf\n", result);
+                break;
                 break;
             case '-':
-                /* code */
+                result = num1 - num2;
+                printf("Result = %.2lf\n", result);
+                break;
                 break;
             case '*':
                 /* code */
@@ -47,15 +51,11 @@ int main()
             
             if (choice == "A" || choice == "a")
             {
-                result = num1 + num2;
-                printf("Result = %.2lf\n", result);
-                break;
+                
             }
             else if (choice == "S" || choice == "s")
             {
-                result = num1 - num2;
-                printf("Result = %.2lf\n", result);
-                break;
+                
             }
             else if (choice == "M" || choice == "d")
             {
