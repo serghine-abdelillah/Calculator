@@ -30,17 +30,21 @@ int main()
                 result = num1 + num2;
                 printf("Result = %.2lf\n", result);
                 break;
-                break;
+                
             case '-':
                 result = num1 - num2;
                 printf("Result = %.2lf\n", result);
-                break;
+                
                 break;
             case '*':
-                /* code */
+                result = num1 * num2;
+                printf("Result : %.2lf\n", result);
+                
                 break;
             case '/':
-                /* code */
+                result = num1 / num2;
+                printf("Result : %.2lf\n", result);
+                
                 break;
             
             default:
@@ -59,15 +63,11 @@ int main()
             }
             else if (choice == "M" || choice == "d")
             {
-                result = num1 * num2;
-                printf("Result : %.2lf\n", result);
-                break;
+                
             }
             else if (choice == "D" || choice == "d")
             {
-                result = num1 / num2;
-                printf("Result : %.2lf\n", result);
-                break;
+                
             }
             else if (choice == "Q" || choice == "q")
             {
