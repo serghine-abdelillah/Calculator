@@ -8,8 +8,8 @@ int main()
     char opr, choice;
     bool x = true;
 
-        while (true)
-        {
+    while (true)
+    {
         printf("Calculator : --- MENU ---\n");
         printf("Enter an operator + - * /  : \n");
         printf("QUIT : tap q|Q :\n");
@@ -18,65 +18,40 @@ int main()
         {
             break;
         }
-        
-        
-            printf("Enter The first Number : ");
-            scanf("%lf", &num1);
-            printf("Enter The Second Number : ");
-            scanf("%lf", &num2);
-            switch (choice)
-            {
-            case '+':
-                result = num1 + num2;
-                printf("Result = %.2lf\n", result);
-                break;
-                
-            case '-':
-                result = num1 - num2;
-                printf("Result = %.2lf\n", result);
-                
-                break;
-            case '*':
-                result = num1 * num2;
-                printf("Result : %.2lf\n", result);
-                
-                break;
-            case '/':
-                result = num1 / num2;
-                printf("Result : %.2lf\n", result);
-                
-                break;
-            
-            default:
-                break;
-            }
-            
-            
-            
-            if (choice == "A" || choice == "a")
-            {
-                
-            }
-            else if (choice == "S" || choice == "s")
-            {
-                
-            }
-            else if (choice == "M" || choice == "d")
-            {
-                
-            }
-            else if (choice == "D" || choice == "d")
-            {
-                
-            }
-            else if (choice == "Q" || choice == "q")
-            {
-                x = false;
-            }
-        
+
+        printf("Enter The first Number : ");
+        scanf("%lf", &num1);
+        printf("Enter The Second Number : ");
+        scanf("%lf", &num2);
+        switch (choice)
+        {
+        case '+':
+            result = num1 + num2;
+            printf("Result = %.2lf\n", result);
+            break;
+
+        case '-':
+            result = num1 - num2;
+            printf("Result = %.2lf\n", result);
+
+            break;
+        case '*':
+            result = num1 * num2;
+            printf("Result : %.2lf\n", result);
+
+            break;
+        case '/':
+            result = num1 / num2;
+            printf("Result : %.2lf\n", result);
+
+            break;
+
+        default:
+            break;
         }
+
         
-        
-    
+    }
+
     return 0;
 }
