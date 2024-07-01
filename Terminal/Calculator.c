@@ -12,7 +12,7 @@ int main()
     {
         printf("Calculator : --- MENU ---\n");
         printf("Enter an operator + - * /  : \n");
-        printf("QUIT : tap q|Q :\n");
+        printf("QUIT : tap q|Q : ");
         scanf(" %c", &choice);
         if (choice == 'Q' || choice == 'q')
         {
@@ -49,8 +49,6 @@ int main()
         default:
             break;
         }
-
-        
     }
 
     return 0;
