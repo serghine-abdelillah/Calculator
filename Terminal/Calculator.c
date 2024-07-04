@@ -5,14 +5,13 @@ int main()
 {
 
     double num1, num2, result;
-    char opr, choice;
-    bool x = true;
+    char choice;
 
     while (true)
     {
-        printf("Calculator : --- MENU ---\n");
-        printf("Enter an operator + - * /  : \n");
-        printf("QUIT : tap q|Q : ");
+        printf(" Calculator : --- MENU ---\n");
+        printf(" Enter an operator + - * /  : \n QUIT : tap q|Q : \n");
+        printf(" You choice :  ");
         scanf(" %c", &choice);
         if (choice == 'Q' || choice == 'q')
         {
