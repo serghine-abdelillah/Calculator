@@ -19,3 +19,6 @@ print("2.Substract")
 print("3.Multiply")
 print("4.Divide")
 
+# Take input from the user
+choice = input("Enter choice(1/2/3/4):")
+
