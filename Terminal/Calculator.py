@@ -29,5 +29,8 @@ elif choice == 2:
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     print(num1,"-",num2,"=", soustraction(num1,num2))
-
-
+elif choice == 3:
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+    print(num1,"*",num2,"=", multiply(num1,num2))
+elif choice == 4:
