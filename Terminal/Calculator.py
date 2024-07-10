@@ -14,12 +14,15 @@ def divide(x,y):
     return x/y
 
 print("--- MENU ---")
-print("1.Add")
-print("Select operation.")
-print("1.Add")
-print("2.Substract")
-print("3.Multiply")
-print("4.Divide")
+print("Select operation :")
+print("1.Add : "  )
+print("2.Substract : ")
+print("3.Multiply : ")
+print("4.Divide : ")
+print("Q|q.Quit : ")
+
+
+
 
 # Take input from the user
 choice = input("Enter choice(1/2/3/4):")
