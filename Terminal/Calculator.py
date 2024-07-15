@@ -23,22 +23,21 @@ print("Q|q.Quit : ")
 
 
 
-
 # Take input from the user
 choice = input("Enter choice(1/2/3/4):")
-if choice == 1:
+if choice == "1":
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     print(num1,"+",num2,"=", add(num1,num2))
-elif choice == 2:
+elif choice == "2":
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     print(num1,"-",num2,"=", soustraction(num1,num2))
-elif choice == 3:
+elif choice == "3":
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     print(num1,"*",num2,"=", multiply(num1,num2))
-elif choice == 4:
+elif choice == "4":
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
     print(num1,"/",num2,"=", divide(num1,num2))
