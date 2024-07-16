@@ -1,6 +1,3 @@
-# develop a simple calculator
-
-# Function to add two numbers
 def add (x,y):
     return x+y
 
@@ -12,6 +9,7 @@ def multiply(x,y):
 
 def divide(x,y):
     return x/y
+
 x = True
 while x == True :
     print("--- MENU ---")
@@ -22,9 +20,6 @@ while x == True :
     print("4.Divide : ")
     print("Q|q.Quit : ")
 
-
-
-    # Take input from the user
     choice = input("Enter choice(1/2/3/4/Q|q):")
     if choice == "1":
         num1 = float(input("Enter first number: "))
