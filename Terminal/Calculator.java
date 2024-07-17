@@ -1,7 +1,10 @@
 /* develop calculator */
 public class Calculator {
-    public add (int a, int b) {
+    public int  add (int a, int b) {
         return a + b;
+    }
+    public int  soustraction (int a, int b) {
+        return a - b;
     }
 
     public static void main(String[] args) {
