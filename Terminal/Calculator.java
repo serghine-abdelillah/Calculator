@@ -1,4 +1,7 @@
 /* develop calculator */
+
+import java.util.Scanner;
+
 public class Calculator {
     public float  add (float a, float b) {
         return a + b;
@@ -50,11 +53,5 @@ public class Calculator {
             }
             
         }
-        float a = 4;
-        float b = 2;
-        System.out.println("Addition: " + (a + b));
-        System.out.println("Subtraction: " + (a - b));
-        System.out.println("Multiplication: " + (a * b));
-        System.out.println("Division: " + (a / b));
-    }
+       }
 }
