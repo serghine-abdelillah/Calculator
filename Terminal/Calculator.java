@@ -26,30 +26,31 @@ public class Calculator {
             System.out.println("4. Division");
             System.out.println("5. Exit");
             System.out.println("Enter your choice: ");
-            Scanner sc = new Scanner(System.in);
-            int choice = sc.nextInt();
-            if (choice == 5) {
-                break;
-            }
-            System.out.println("Enter two numbers: ");
-            float a = sc.nextFloat();
-            float b = sc.nextFloat();
-            Calculator cal = new Calculator();
-            switch (choice) {
-                case 1:
-                    System.out.println("Addition: " + cal.add(a, b));
+            try (Scanner sc = new Scanner(System.in)) {
+                int choice = sc.nextInt();
+                if (choice == 5) {
                     break;
-                case 2:
-                    System.out.println("Subtraction: " + cal.soustraction(a, b));
-                    break;
-                case 3:
-                    System.out.println("Multiplication: " + cal.multiply(a, b));
-                    break;
-                case 4:
-                    System.out.println("Division: " + cal.divide(a, b));
-                    break;
-                default:
-                    System.out.println("Invalid choice");
+                }
+                System.out.println("Enter two numbers: ");
+                float a = sc.nextFloat();
+                float b = sc.nextFloat();
+                Calculator cal = new Calculator();
+                switch (choice) {
+                    case 1:
+                        System.out.println("Addition: " + cal.add(a, b));
+                        break;
+                    case 2:
+                        System.out.println("Subtraction: " + cal.soustraction(a, b));
+                        break;
+                    case 3:
+                        System.out.println("Multiplication: " + cal.multiply(a, b));
+                        break;
+                    case 4:
+                        System.out.println("Division: " + cal.divide(a, b));
+                        break;
+                    default:
+                        System.out.println("Invalid choice");
+                }
             }
             
         }
