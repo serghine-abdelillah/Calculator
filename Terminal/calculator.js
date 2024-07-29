@@ -17,6 +17,8 @@ console.log("2. Subtract");
 console.log("3. Multiply");
 console.log("4. Divide");
 
-if ( choice == `1` ) {
+if (choice == `1`) {
   console.log(add(1, 2));
+} else if (choice == `2`) {
+  console.log(Subtract(1, 2));
 }
