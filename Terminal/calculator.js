@@ -21,4 +21,6 @@ if (choice == `1`) {
   console.log(add(1, 2));
 } else if (choice == `2`) {
   console.log(Subtract(1, 2));
+} else if (choice == `3`) {
+  console.log(Multiply(1, 2));
 }
