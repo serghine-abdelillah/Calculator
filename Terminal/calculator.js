@@ -11,11 +11,16 @@ function Multiply(a, b) {
 function Divide(a, b) {
   return a / b;
 }
+while (){
+  
+}
+
 console.log("MENU");
 console.log("1. Add");
 console.log("2. Subtract");
 console.log("3. Multiply");
 console.log("4. Divide");
+
 
 if (choice == `1`) {
   console.log(add(1, 2));
