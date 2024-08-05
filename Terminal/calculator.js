@@ -11,8 +11,14 @@ function Multiply(a, b) {
 function Divide(a, b) {
   return a / b;
 }
-while (){
-  
+while (true){
+  var choice = prompt("Enter your choice: ");
+  if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
+    break;
+  }
+  console.log("Invalid choice. Please enter a valid choice.");
+
+
 }
 
 console.log("MENU");
