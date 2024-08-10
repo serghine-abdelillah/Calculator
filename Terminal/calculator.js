@@ -14,7 +14,8 @@ function Divide(a, b) {
 while (true){
   var choice = prompt("Enter your choice: ");
   if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
-    console.log('Enter two numbers')
+    console.log(); 
+    var num1, num2 = prompt("Enter two numbers");
     break;
   }
   console.log("Invalid choice. Please enter a valid choice.");
