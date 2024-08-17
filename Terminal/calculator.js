@@ -25,7 +25,9 @@ while (true) {
     console.log();
     var num1,num2 = prompt("Enter two numbers");
     if (choice == `1`) {
-  console.log(add(1, 2));
+    console.log(add(1, 2));
+  }else if (choice == `2`) {
+    console.log(Subtract(1, 2));
 }
     break;
   }
@@ -34,9 +36,7 @@ while (true) {
 
 
 
- else if (choice == `2`) {
-  console.log(Subtract(1, 2));
-} else if (choice == `3`) {
+  else if (choice == `3`) {
   console.log(Multiply(1, 2));
 } else if (choice == `4`) {
   console.log(Divide(1, 2));
