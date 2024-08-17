@@ -24,6 +24,9 @@ while (true) {
   if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
     console.log();
     var num1,num2 = prompt("Enter two numbers");
+    if (choice == `1`) {
+  console.log(add(1, 2));
+}
     break;
   }
   console.log("Invalid choice. Please enter a valid choice.");
@@ -31,9 +34,7 @@ while (true) {
 
 
 
-if (choice == `1`) {
-  console.log(add(1, 2));
-} else if (choice == `2`) {
+ else if (choice == `2`) {
   console.log(Subtract(1, 2));
 } else if (choice == `3`) {
   console.log(Multiply(1, 2));
