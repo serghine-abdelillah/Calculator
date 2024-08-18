@@ -28,7 +28,9 @@ while (true) {
     console.log(add(1, 2));
   }else if (choice == `2`) {
     console.log(Subtract(1, 2));
-}
+  } else if (choice == `3`) {
+  console.log(Multiply(1, 2));
+  }
     break;
   }
   console.log("Invalid choice. Please enter a valid choice.");
@@ -36,8 +38,6 @@ while (true) {
 
 
 
-  else if (choice == `3`) {
-  console.log(Multiply(1, 2));
-} else if (choice == `4`) {
+  else if (choice == `4`) {
   console.log(Divide(1, 2));
 }
