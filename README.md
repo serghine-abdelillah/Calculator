@@ -16,5 +16,4 @@ to run the js file in your terminal you need to install Nodejs from nodejs.org
 Open terminal and run:-
 
 Step 1: npm init
-Step 2: npm install prompt-sync
-Step 3: Open the js file (name.js) in which you want to use prompt and import the prompt-sync as given below. (on line 
+Step 2: npm install `prompt-sync`
