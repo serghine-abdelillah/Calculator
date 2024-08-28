@@ -16,6 +16,6 @@ to run the js file in your terminal you need to install Nodejs from nodejs.org
 Open terminal and run:-
 
 Step 1: npm init \
-Step 2: npm install `prompt-sync`
-Step 3: Run the File \
+Step 2: npm install `prompt-sync` \
+Step 3: Run the File 
 
