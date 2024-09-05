@@ -24,10 +24,9 @@ console.log("4. Divide");
 while (true) {
   var choice = prompt("Enter your choice: ");
   if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
-    console.log();
-    var num1,num2 = prompt("Enter two numbers");
+    var num1,num2 = prompt("Enter two numbers : ");
     if (choice == `1`) {
-    console.log(add(1, 2));
+    console.log(add(num1, num2));
   }else if (choice == `2`) {
     console.log(Subtract(1, 2));
   } else if (choice == `3`) {
