@@ -1,4 +1,6 @@
-// Add function
+const prompt = require("prompt-sync")();
+
+
 function add(a, b) {
   return a + b;
 }
@@ -31,6 +33,9 @@ while (true) {
   } else if (choice == `3`) {
   console.log(Multiply(1, 2));
   }
+  else if (choice == `4`) {
+  console.log(Divide(1, 2));
+  }
     break;
   }
   console.log("Invalid choice. Please enter a valid choice.");
@@ -38,6 +43,3 @@ while (true) {
 
 
 
-  else if (choice == `4`) {
-  console.log(Divide(1, 2));
-}
