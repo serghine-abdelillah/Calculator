@@ -23,10 +23,11 @@ while (true) {
   var choice = prompt("Enter your choice: ");
   if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
     console.log("Enter two numbers : ");
-    var num1 = prompt("Enter the first number : ");
-    var num1 = prompt("Enter the second numbers : ");
+    const num1 = prompt("Enter the first number : ");
+    const num2 = prompt("Enter the second numbers : ");
+    
     if (choice == `1`) {
-      console.log(add(num1, num2));
+      console.log(add(parseInt(num1), parseInt(num2)));
     } else if (choice == `2`) {
       console.log(Subtract(1, 2));
     } else if (choice == `3`) {
