@@ -1,6 +1,5 @@
 const prompt = require("prompt-sync")();
 
-
 function add(a, b) {
   return a + b;
 }
@@ -20,25 +19,22 @@ console.log("2. Subtract");
 console.log("3. Multiply");
 console.log("4. Divide");
 
-
 while (true) {
   var choice = prompt("Enter your choice: ");
   if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
-    var num1,num2 = prompt("Enter two numbers : ");
+    console.log("Enter two numbers : ");
+    var num1 = prompt("Enter the first number : ");
+    var num1 = prompt("Enter the second numbers : ");
     if (choice == `1`) {
-    console.log(add(num1, num2));
-  }else if (choice == `2`) {
-    console.log(Subtract(1, 2));
-  } else if (choice == `3`) {
-  console.log(Multiply(1, 2));
-  }
-  else if (choice == `4`) {
-  console.log(Divide(1, 2));
-  }
+      console.log(add(num1, num2));
+    } else if (choice == `2`) {
+      console.log(Subtract(1, 2));
+    } else if (choice == `3`) {
+      console.log(Multiply(1, 2));
+    } else if (choice == `4`) {
+      console.log(Divide(1, 2));
+    }
     break;
   }
   console.log("Invalid choice. Please enter a valid choice.");
 }
-
-
-
