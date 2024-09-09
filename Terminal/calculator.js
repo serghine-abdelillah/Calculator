@@ -29,11 +29,11 @@ while (true) {
     if (choice == `1`) {
       console.log(add(parseInt(num1), parseInt(num2)));
     } else if (choice == `2`) {
-      console.log(Subtract(1, 2));
+      console.log(add(parseInt(num1), parseInt(num2)));
     } else if (choice == `3`) {
-      console.log(Multiply(1, 2));
+      console.log(add(parseInt(num1), parseInt(num2)));
     } else if (choice == `4`) {
-      console.log(Divide(1, 2));
+      console.log(add(parseInt(num1), parseInt(num2)));
     }
     break;
   }
