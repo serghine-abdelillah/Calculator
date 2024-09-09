@@ -25,7 +25,7 @@ while (true) {
     console.log("Enter two numbers : ");
     const num1 = prompt("Enter the first number : ");
     const num2 = prompt("Enter the second numbers : ");
-    
+
     if (choice == `1`) {
       console.log(add(parseInt(num1), parseInt(num2)));
     } else if (choice == `2`) {
