@@ -29,7 +29,7 @@ while (true) {
     if (choice == `1`) {
         console.log(`the sum is ${add(parseInt(num1), parseInt(num2))}`);
     } else if (choice == `2`) {
-      console.log(add(parseInt(num1), parseInt(num2)));
+      console.log(add(`the subs is ${add(parseInt(num1), parseInt(num2))}`);
     } else if (choice == `3`) {
       console.log(add(parseInt(num1), parseInt(num2)));
     } else if (choice == `4`) {
