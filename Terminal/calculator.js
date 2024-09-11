@@ -31,9 +31,9 @@ while (true) {
     } else if (choice == `2`) {
       console.log(`the Subtraction is ${Subtract(parseInt(num1), parseInt(num2))}`);
     } else if (choice == `3`) {
-      console.log(`the Subtraction is ${Subtract(parseInt(num1), parseInt(num2))}`);
+      console.log(`the Multiply is ${Multiply(parseInt(num1), parseInt(num2))}`);
     } else if (choice == `4`) {
-      console.log(add(parseInt(num1), parseInt(num2)));
+      console.log(`the division is ${Divide(parseInt(num1), parseInt(num2))}`);
     }
     break;
   }
