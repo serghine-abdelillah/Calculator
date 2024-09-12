@@ -18,6 +18,7 @@ console.log("1. Add");
 console.log("2. Subtract");
 console.log("3. Multiply");
 console.log("4. Divide");
+console.log("5. Quit");
 
 while (true) {
   var choice = prompt("Enter your choice: ");
