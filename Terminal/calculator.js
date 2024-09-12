@@ -27,11 +27,15 @@ while (true) {
     const num2 = prompt("Enter the second numbers : ");
 
     if (choice == `1`) {
-        console.log(`the sum is ${add(parseInt(num1), parseInt(num2))}`);
+      console.log(`the sum is ${add(parseInt(num1), parseInt(num2))}`);
     } else if (choice == `2`) {
-      console.log(`the Subtraction is ${Subtract(parseInt(num1), parseInt(num2))}`);
+      console.log(
+        `the Subtraction is ${Subtract(parseInt(num1), parseInt(num2))}`
+      );
     } else if (choice == `3`) {
-      console.log(`the Multiply is ${Multiply(parseInt(num1), parseInt(num2))}`);
+      console.log(
+        `the Multiply is ${Multiply(parseInt(num1), parseInt(num2))}`
+      );
     } else if (choice == `4`) {
       console.log(`the division is ${Divide(parseInt(num1), parseInt(num2))}`);
     }
