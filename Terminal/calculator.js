@@ -22,7 +22,7 @@ console.log("5. Quit");
 
 while (choice != 5) {
   var choice = prompt("Enter your choice: ");
-  if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
+  if (choice == `1` || choice == `2` || choice == `3` || choice == `4` || choice == `5`) {
     console.log("Enter two numbers : ");
     const num1 = prompt("Enter the first number : ");
     const num2 = prompt("Enter the second numbers : ");
@@ -40,6 +40,6 @@ while (choice != 5) {
     } else if (choice == `4`) {
       console.log(`the division is ${Divide(parseInt(num1), parseInt(num2))}`);
     }
-  }
+  } else {
   console.log("Invalid choice. Please enter a valid choice.");
-}
+}}
