@@ -40,6 +40,9 @@ while (choice != 5) {
     } else if (choice == `4`) {
       console.log(`the division is ${Divide(parseInt(num1), parseInt(num2))}`);
     }
+    } else if (choice == `5`) {
+      console.log(`the division is ${Divide(parseInt(num1), parseInt(num2))}`);
+    }
   } else {
   console.log("Invalid choice. Please enter a valid choice.");
 }}
