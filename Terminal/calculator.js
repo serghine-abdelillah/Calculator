@@ -44,7 +44,7 @@ while (choice != 5) {
     
     } else if (choice == `5`) {
       console.log(`Quitting`);
-    
+    break;
   } 
 }else {
   console.log("Invalid choice. Please enter a valid choice.");
