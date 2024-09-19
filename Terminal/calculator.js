@@ -16,7 +16,7 @@ function Divide(a, b) {
 
 var x = true 
 while (x) {
-  console.log("MENU");
+  console.log("-----\n MENU\n-----");
   console.log("1. Add");
   console.log("2. Subtract");
   console.log("3. Multiply");
