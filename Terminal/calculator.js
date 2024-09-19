@@ -13,10 +13,9 @@ function Divide(a, b) {
   return a / b;
 }
 
-
-var x = true 
+var x = true;
 while (x) {
-  console.log("-----\n MENU\n-----");
+  console.log("--------------\n     MENU\n--------------");
   console.log("1. Add");
   console.log("2. Subtract");
   console.log("3. Multiply");
@@ -26,11 +25,9 @@ while (x) {
   if (choice == `5`) {
     console.log(`Quitting`);
 
-  break;
-} 
+    break;
+  }
   if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
-    
-    
     console.log("Enter two numbers : ");
     const num1 = prompt("Enter the first number : ");
     const num2 = prompt("Enter the second numbers : ");
@@ -47,8 +44,8 @@ while (x) {
       );
     } else if (choice == `4`) {
       console.log(`the division is ${Divide(parseInt(num1), parseInt(num2))}`);
-    
     }
-}else {
-  console.log("Invalid choice. Please enter a valid choice.");
-}}
+  } else {
+    console.log("Invalid choice. Please enter a valid choice.");
+  }
+}
