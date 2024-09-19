@@ -23,7 +23,12 @@ while (x) {
   console.log("4. Divide");
   console.log("5. Quit");
   var choice = prompt("Enter your choice: ");
-  if (choice == `1` || choice == `2` || choice == `3` || choice == `4`|| choice == `5`) {
+  if (choice == `5`) {
+    console.log(`Quitting`);
+
+  break;
+} 
+  if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
     
     
     console.log("Enter two numbers : ");
@@ -43,11 +48,7 @@ while (x) {
     } else if (choice == `4`) {
       console.log(`the division is ${Divide(parseInt(num1), parseInt(num2))}`);
     
-    } else if (choice == `5`) {
-      console.log(`Quitting`);
-
-    break;
-  } 
+    }
 }else {
   console.log("Invalid choice. Please enter a valid choice.");
 }}
