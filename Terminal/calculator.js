@@ -23,7 +23,7 @@ while (x) {
   console.log("4. Divide");
   console.log("5. Quit");
   var choice = prompt("Enter your choice: ");
-  if (choice == `1` || choice == `2` || choice == `3` || choice == `4`) {
+  if (choice == `1` || choice == `2` || choice == `3` || choice == `4`|| choice == `5`) {
     
     
     console.log("Enter two numbers : ");
