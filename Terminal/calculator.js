@@ -36,7 +36,7 @@ while (x) {
       console.log(`--------------\nthe sum is ${add(parseInt(num1), parseInt(num2))}`);
     } else if (choice == `2`) {
       console.log(
-        `\nthe Subtraction is ${Subtract(parseInt(num1), parseInt(num2))}`
+        `--------------\nthe Subtraction is ${Subtract(parseInt(num1), parseInt(num2))}`
       );
     } else if (choice == `3`) {
       console.log(
