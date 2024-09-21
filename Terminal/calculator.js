@@ -40,7 +40,7 @@ while (x) {
       );
     } else if (choice == `3`) {
       console.log(
-        `\nthe Multiply is ${Multiply(parseInt(num1), parseInt(num2))}`
+        `--------------\nthe Multiply is ${Multiply(parseInt(num1), parseInt(num2))}`
       );
     } else if (choice == `4`) {
       console.log(`\nthe division is ${Divide(parseInt(num1), parseInt(num2))}`);
