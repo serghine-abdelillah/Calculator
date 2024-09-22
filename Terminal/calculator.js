@@ -51,6 +51,9 @@ while (x) {
         )}`
       );
     } else if (choice == `4`) {
+      if (condition) {
+        
+      }
       console.log(
         `--------------\nthe division is ${Divide(
           parseInt(num1),
