@@ -51,9 +51,10 @@ while (x) {
         )}`
       );
     } else if (choice == `4`) {
-      if (condition) {
+      if (num2 == 0) {
+        console.log('ERROR DIVIDING BY 0');
         
-      }
+      }else{
       console.log(
         `--------------\nthe division is ${Divide(
           parseInt(num1),
@@ -64,4 +65,5 @@ while (x) {
   } else {
     console.log("Invalid choice. Please enter a valid choice.");
   }
-}
+  }
+  }
