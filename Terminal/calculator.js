@@ -52,18 +52,17 @@ while (x) {
       );
     } else if (choice == `4`) {
       if (num2 == 0) {
-        console.log('ERROR DIVIDING BY 0');
-        
-      }else{
-      console.log(
-        `--------------\nthe division is ${Divide(
-          parseInt(num1),
-          parseInt(num2)
-        )}`
-      );
+        console.log("ERROR DIVIDING BY 0");
+      } else {
+        console.log(
+          `--------------\nthe division is ${Divide(
+            parseInt(num1),
+            parseInt(num2)
+          )}`
+        );
+      }
+    } else {
+      console.log("Invalid choice. Please enter a valid choice.");
     }
-  } else {
-    console.log("Invalid choice. Please enter a valid choice.");
   }
-  }
-  }
+}
