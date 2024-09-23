@@ -12,7 +12,7 @@ Implement A Simple Calculator Using Different Programming Languages
 
 
 ### JS File 
-to run the js file in your terminal you need to install Nodejs from nodejs.org
+to run the js file in your PC you need to install Nodejs from nodejs.org
 Open terminal and run:-
 
 Step 1: npm init \
