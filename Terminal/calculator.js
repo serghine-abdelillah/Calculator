@@ -33,32 +33,18 @@ while (x) {
     const num2 = prompt("Enter the second numbers : ");
 
     if (choice == `1`) {
-      console.log(
-        `--------------\nthe sum is ${add(parseInt(num1), parseInt(num2))}`
-      );
+      console.log(`--------------\nthe sum is ${add(parseInt(num1), parseInt(num2))}`);
     } else if (choice == `2`) {
-      console.log(
-        `--------------\nthe Subtraction is ${Subtract(
-          parseInt(num1),
-          parseInt(num2)
-        )}`
+      console.log(`--------------\nthe Subtraction is ${Subtract(parseInt(num1),parseInt(num2))}`
       );
     } else if (choice == `3`) {
-      console.log(
-        `--------------\nthe Multiply is ${Multiply(
-          parseInt(num1),
-          parseInt(num2)
-        )}`
+      console.log(`--------------\nthe Multiply is ${Multiply(parseInt(num1),parseInt(num2))}`
       );
     } else if (choice == `4`) {
       if (num2 == 0) {
         console.log("ERROR DIVIDING BY 0");
       } else {
-        console.log(
-          `--------------\nthe division is ${Divide(
-            parseInt(num1),
-            parseInt(num2)
-          )}`
+        console.log(`--------------\nthe division is ${Divide(parseInt(num1),parseInt(num2))}`
         );
       }
     } else {
