@@ -3,7 +3,7 @@ Implement A Simple Calculator Using Different Programming Languages
 
 ## steps to run each file 
  1 - install VScode or any editor you like \
- 2 - clone the repository using `prompt-sync` \
+ 2 - clone the repository using `git clone` 
 ### C File
 
 ### Python File
