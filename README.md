@@ -3,7 +3,8 @@ Implement A Simple Calculator Using Different Programming Languages
 
 ## steps to run each file 
  1 - install VScode or any editor you like \
- 2 - clone the repository using `git clone` 
+ 2 - clone the repository using `git clone` \
+ 3 - open VS code 
 ### C File
 
 ### Python File
