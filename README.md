@@ -2,8 +2,8 @@
 Implement A Simple Calculator Using Different Programming Languages 
 
 ### Structure of the project
-in the terminal folder 
-there is calculator that runs on ter,inal
+in the terminal folder : \
+all the files run on the terminal
 
 ## steps to run each file from VS code
  1 - install VScode or any editor you like \
