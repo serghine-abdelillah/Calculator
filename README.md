@@ -9,11 +9,7 @@ all the files run on the terminal
  1 - install VScode or any editor you like \
  2 - clone the repository using `git clone` \
  3 - open VS code 
-### C File
 
-### Python File
-
-### Java File
 
 
 ### JS File 
