@@ -3,7 +3,7 @@
 ### Python File
 Install Python from  [Python](https://www.python.org/)
 ### Java File
-Install Python from  [Python](https://www.python.org/)
+Install Java from  [Java]()
 ### JS File 
 to run the js file in your PC you need to install Nodejs from nodejs.org
 Open terminal and run:-
