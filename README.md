@@ -6,6 +6,7 @@ In the terminal folder : \
 All the files run on the terminal
 
 ## Running 
+You can run this project in your local machine 
 
 ## Steps to run the files from VS code
  1 - install VScode or any editor you like \
