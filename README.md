@@ -5,6 +5,8 @@ Implement A Simple Calculator Using Different Programming Languages
 In the terminal folder : \
 All the files run on the terminal
 
+## Running 
+
 ## Steps to run the files from VS code
  1 - install VScode or any editor you like \
  2 - clone the repository using `git clone` \
