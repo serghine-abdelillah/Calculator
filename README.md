@@ -1,21 +1,19 @@
 # Calculator
 Implement A Simple Calculator Using Different Programming Languages 
 
-## steps to run each file 
- 1 - install VScode or any editor you like
+## Structure of the project
+In the terminal folder : \
+All the files run on the terminal
 
-### C File
+## Running 
+You can run this project in your local machine by pulling the project
 
-### Python File
+## Steps to run the files from VS code
+ 1 - install VScode or any editor you like \
+ 2 - clone the repository using `git clone` \
+ 3 - open VS code 
 
-### Java File
 
 
-### JS File 
-to run the js file in your terminal you need to install Nodejs from nodejs.org
-Open terminal and run:-
 
-Step 1: npm init \
-Step 2: npm install `prompt-sync` \
-Step 3: Run the File 
 
