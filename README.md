@@ -3,7 +3,8 @@ Implement A Simple Calculator Using Different Programming Languages
 
 ## Structure of the project
 In the terminal folder : \
-All the files run on the terminal
+All the files run on the terminal\
+In the App folder 
 
 ## Running 
 You can run this project in your local machine by pulling the project
