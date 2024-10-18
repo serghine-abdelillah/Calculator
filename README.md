@@ -1,5 +1,5 @@
 # Calculator
-Implement A Simple Calculator (+, -, *, /)Using Different Programming Languages 
+Implement A Simple Calculator ( + , - , * , / ) Using Different Programming Languages 
 
 ## Structure of the project
 In the terminal folder : \
