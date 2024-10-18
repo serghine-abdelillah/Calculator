@@ -7,7 +7,7 @@ All the files run on the terminal\
 In the App folder there is an app that runs in the web, mobile and desktop
 
 ## Running 
-You can run this project in your local machine by pulling the project and installing the language you need 
+You can run this project in your local machine by pulling the project and installing the languages you need 
 
 ## Steps to run the files from VS code
  1 - install VScode or any editor you like \
