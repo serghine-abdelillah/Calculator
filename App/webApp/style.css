@@ -14,4 +14,5 @@ h1 {
 }
 
 .numbers-buttons {
+  display: flex;
 }
