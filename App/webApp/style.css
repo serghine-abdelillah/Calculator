@@ -14,8 +14,12 @@ h1 {
   width: 70%;
 }
 
-.numbers-buttons {
+.buttons {
   display: flex;
+}
+
+.numbers-buttons {
+  display: inherit;
   justify-content: space-between;
   width: 50%;
 }
