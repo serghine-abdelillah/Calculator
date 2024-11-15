@@ -24,9 +24,6 @@ h1 {
   width: 50%;
 }
 
-.numbers-buttons .operations-buttons div{
-  display: inherit;
-  justify-content: space-between;
-  width: 50%;
+.numbers-buttons .operations-buttons div {
+  width: 20px;
 }
-
