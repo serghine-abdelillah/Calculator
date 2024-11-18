@@ -26,6 +26,7 @@ h1 {
   width: 50%;
 }
 
-.numbers-buttons .operations-buttons div {
+.numbers-buttons .operations-buttons   div {
   width: 20px;
+  height: 20px;
 }
