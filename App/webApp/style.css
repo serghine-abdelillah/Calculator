@@ -35,8 +35,6 @@ h1 {
 }
 
 .numbers-buttons .operations-buttons {
-  display: flex;
-  justify-content: space-between;
   width: 50%;
 }
 
@@ -48,5 +46,7 @@ h1 {
 }
 
 .numbers-buttons {
-  display: inline;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
 }
