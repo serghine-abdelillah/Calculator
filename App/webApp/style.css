@@ -40,8 +40,8 @@ h1 {
 
 .numbers-buttons > div,
 .operations-buttons > div {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   text-align: center;
 }
 
@@ -49,4 +49,5 @@ h1 {
   width: 300px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
