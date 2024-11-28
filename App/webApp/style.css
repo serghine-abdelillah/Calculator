@@ -10,7 +10,6 @@ h1 {
 
 .shape {
   margin: auto;
-  text-align: center;
   width: 400px;
   height: 550px;
   border: 2px solid black;
@@ -32,10 +31,11 @@ h1 {
 .buttons {
   display: flex;
   justify-content: space-between;
+  margin: 5px;
 }
 
 .numbers-buttons .operations-buttons {
-  display: inherit;
+  display: flex;
   justify-content: space-between;
   width: 50%;
 }
@@ -44,4 +44,9 @@ h1 {
 .operations-buttons > div {
   width: 40px;
   height: 40px;
+  text-align: center;
+}
+
+.numbers-buttons {
+  display: inline;
 }
