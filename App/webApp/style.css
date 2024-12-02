@@ -48,6 +48,7 @@ h1 {
   border: 1px solid black;
   margin: 5px;
   font-size: 24px;
+  border-radius: 8px;
 }
 
 .numbers-buttons {
