@@ -62,3 +62,7 @@ h1 {
   display: flex;
   flex-direction: column;
 }
+
+.numbers-buttons > .equal {
+  width: 170px;
+}
