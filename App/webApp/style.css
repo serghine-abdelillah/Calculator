@@ -6,6 +6,8 @@
 h1 {
   text-align: center;
   margin: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
 }
 
 .shape {
