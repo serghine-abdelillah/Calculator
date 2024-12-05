@@ -56,7 +56,7 @@ h1 {
 .numbers-buttons {
   width: 300px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   flex-wrap: wrap;
 }
 
