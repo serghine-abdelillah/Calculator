@@ -13,6 +13,7 @@ You can run this project in your local machine by cloning the project and instal
  1 - Install VScode or any editor you like \
  2 - clone the repository using `git clone` \
  3 - open VS code 
+ 4 - Run file and enjoy
 
 
 
