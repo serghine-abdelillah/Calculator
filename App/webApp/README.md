@@ -1,2 +1,1 @@
-# Calx
-### calculator as a Web Application
+# calculator as a Web Application
