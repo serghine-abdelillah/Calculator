@@ -38,7 +38,7 @@ h1 {
 .buttons {
   display: flex;
   margin: 5px;
-  background-color: #333438;
+  
 }
 
 .numbers-buttons > div,
@@ -52,6 +52,11 @@ h1 {
   margin: 5px;
   font-size: 24px;
   border-radius: 8px;
+  background-color: #333438;
+}
+
+.operations-buttons > div {
+  background-color: #2c303d;
 }
 
 .numbers-buttons {
