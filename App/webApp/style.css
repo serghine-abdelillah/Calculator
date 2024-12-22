@@ -53,11 +53,12 @@ h1 {
   font-size: 24px;
   border-radius: 8px;
   background-color: #333438;
+  color: white;
 }
 
 .operations-buttons > div {
   background-color: #2c303d;
-  color: white;
+  
 }
 
 .numbers-buttons {
