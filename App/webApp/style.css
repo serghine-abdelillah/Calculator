@@ -20,6 +20,7 @@ h1 {
   width: 350px;
   height: 400px;
   border-radius: 8px;
+  border: 2px solid #444746;
 }
 
 .screen {
