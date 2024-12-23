@@ -55,7 +55,7 @@ h1 {
   font-size: 24px;
   border-radius: 8px;
   background-color: #333438;
-  color: white;
+  color: #eef0ff;
 }
 
 .operations-buttons > div {
@@ -74,4 +74,8 @@ h1 {
 .operations-buttons {
   display: flex;
   flex-direction: column;
+}
+
+div .equal{
+  background-color: #a8c7fa;
 }
