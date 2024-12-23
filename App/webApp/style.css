@@ -24,10 +24,9 @@ h1 {
 
 .screen {
   margin: 5px;
-  border: 2px solid black;
-  height: 100px;
+  border: 1px solid #444746;
+  height: 50px;
   border-radius: 8px;
-  background-color: #333438;
 }
 
 .screen span {
