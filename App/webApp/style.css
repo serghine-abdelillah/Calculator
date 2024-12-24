@@ -55,6 +55,7 @@ h1 {
   border-radius: 8px;
   background-color: #333438;
   color: #eef0ff;
+  cursor: pointer;
 }
 
 .operations-buttons > div {
