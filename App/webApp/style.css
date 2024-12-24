@@ -42,9 +42,7 @@ h1 {
   
 }
 
-.numbers-buttons > div,
-.operations-buttons > div {
-
+button {
   width: 60px;
   height: 60px;
   display: flex;
