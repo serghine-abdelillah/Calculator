@@ -1,7 +1,8 @@
 // when click on div diplat message 
 // when click on button display message
 
-document.querySelector('div').addEventListener('click', function() {
-    alert('Div is clicked');
+document.querySelectorAll('button').forEach(function(button) {
+    button.addEventListener('click', function() {
+        alert('button clicked');
+    });
 });
-
