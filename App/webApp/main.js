@@ -3,6 +3,8 @@
 
 document.querySelectorAll('button').forEach(function(button) {
     button.addEventListener('click', function() {
-        alert('button clicked');
+        // parse html element
+        var message = button.outerHTML;
+        alert(message);
     });
 });
