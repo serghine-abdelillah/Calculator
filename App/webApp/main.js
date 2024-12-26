@@ -1,10 +1,9 @@
 // when click on div diplat message 
 // when click on button display message
 
-document.querySelectorAll('button').forEach(function(button) {
+document.querySelectorAll('.numbers-buttons button').forEach(function(button) {
     button.addEventListener('click', function() {
         // parse html element
-        var n = document.createTextNode(button.innerText);
-        document.querySelector('span').appendChild(n);
+        document.querySelector('span').appendChild(document.createTextNode(button.innerText));
     });
 });
