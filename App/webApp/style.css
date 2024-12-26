@@ -57,7 +57,7 @@ button {
   cursor: pointer;
 }
 
-.operations-buttons > div {
+.operations-buttons > button {
   background-color: #2c303d;
   
 }
