@@ -1,9 +1,13 @@
 // when click on div diplat message 
 // when click on button display message
+var screen = document.querySelector('span');
 
-document.querySelectorAll('button').forEach(function (button) {
+document.querySelector('.ac').addEventListener('click', function(){
+    screen.innerText = '';
+})
+document.querySelectorAll('button:not(button.ac)').forEach(function (button) {
     button.addEventListener('click', function(){
-        screen = document.querySelector('span');
         txt = document.createTextNode(button.innerText)
         screen.appendChild(txt)});    
 })
+

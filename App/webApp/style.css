@@ -46,11 +46,7 @@ h1 {
   margin: 5px;
 }
 
-.ac {
-  background-color: #a8c7fa;
-  color: #1f1f1f;
-  margin-left: 15px;
-}
+
 button {
   width: 60px;
   height: 60px;
@@ -64,6 +60,12 @@ button {
   background-color: #333438;
   color: #eef0ff;
   cursor: pointer;
+}
+
+.ac {
+  background-color: #a8c7fa;
+  color: #1f1f1f;
+  margin-left: 15px;
 }
 
 .operations-buttons > button {
