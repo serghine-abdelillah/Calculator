@@ -5,9 +5,18 @@ var screen = document.querySelector('span');
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
 })
-document.querySelectorAll('button:not(button.ac)').forEach(function (button) {
+document.querySelectorAll('.numbers-buttons button ').forEach(function (button) {
     button.addEventListener('click', function(){
-        txt = document.createTextNode(button.innerText)
+        var txt = document.createTextNode(button.innerText);
         screen.appendChild(txt)});    
 })
 
+document.querySelectorAll('.operations-buttons button').forEach(function (button) {
+    button.addEventListener('click', function () {
+        var opr = document.createTextNode(button.innerText);
+        var lastel = screen.innerText.slice(-1);
+        if (!['+', '-', 'x', '/'].includes(lastel)){
+            screen.appendChild(opr)
+        }
+    })    
+})
