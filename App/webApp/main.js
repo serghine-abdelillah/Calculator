@@ -15,7 +15,6 @@ document.querySelector('.ac').addEventListener('click', function(){
 document.querySelectorAll('.numbers-buttons button ').forEach(function (button) {
     button.addEventListener('click', function(){
         curnum = curnum + button.innerText;
-        console.log(curnum)
         var txt = document.createTextNode(button.innerText);
         screen.appendChild(txt);    
     })});
@@ -26,11 +25,13 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
         var lastel = screen.innerText.slice(-1);
         if (!['+', '-', 'x', '/'].includes(lastel)){
             screen.appendChild(opr)
+            
         }
-        result = curnum;
-        switch (opr) {
-            case '+':
-                
+        switch (button.innerText) {
+            case "+":
+                var num = parseInt(curnum)
+                result = result + num ;
+                console.log(result)
                 break;
             case '-':
                 
