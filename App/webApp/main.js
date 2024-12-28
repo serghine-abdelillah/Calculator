@@ -1,6 +1,7 @@
 // when click on div diplat message 
 // when click on button display message
 var screen = document.querySelector('span');
+var result = 0;
 
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
@@ -8,8 +9,8 @@ document.querySelector('.ac').addEventListener('click', function(){
 document.querySelectorAll('.numbers-buttons button ').forEach(function (button) {
     button.addEventListener('click', function(){
         var txt = document.createTextNode(button.innerText);
-        screen.appendChild(txt)});    
-})
+        screen.appendChild(txt);    
+    })});
 
 document.querySelectorAll('.operations-buttons button').forEach(function (button) {
     button.addEventListener('click', function () {
@@ -19,4 +20,5 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
             screen.appendChild(opr)
         }
     })    
+    console.log(document.getElementsByTagName('span').innerText());
 })
