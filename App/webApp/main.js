@@ -11,6 +11,7 @@ document.querySelector('.ac').addEventListener('click', function(){
     curnum = ''
     prenum = ''
     opr = ''
+    result = 0;
 })
 document.querySelectorAll('.numbers-buttons button ').forEach(function (button) {
     button.addEventListener('click', function(){
