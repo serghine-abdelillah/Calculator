@@ -20,5 +20,6 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
             screen.appendChild(opr)
         }
     })    
-    console.log(document.getElementsByTagName('span').innerText());
+    var el = document.getElementsByTagName('span');
+    console.log();
 })
