@@ -29,9 +29,7 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
             screen.appendChild(opr)
         }
         
-        console.log(opr);
-        if (button.innerText === 'x'){
-            console.log(opr);
+        if (button.innerText == 'x'){
             curnum += '*';
         } else {
             curnum += button.innerText;
