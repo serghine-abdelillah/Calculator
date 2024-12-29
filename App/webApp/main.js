@@ -27,10 +27,12 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
         var lastel = screen.innerText.slice(-1);
         if (!['+', '-', 'x', '/'].includes(lastel)){
             screen.appendChild(opr)
-            
         }
-        if (opr === 'x'){
-            curnum += '*'
+        
+        console.log(opr);
+        if (button.innerText === 'x'){
+            console.log(opr);
+            curnum += '*';
         } else {
             curnum += button.innerText;
         }
