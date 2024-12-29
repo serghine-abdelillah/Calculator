@@ -12,6 +12,7 @@ document.querySelector('.ac').addEventListener('click', function(){
     prenum = ''
     opr = ''
     result = 0;
+    console.log(eval('1+2*3+4'));
 })
 document.querySelectorAll('.numbers-buttons button ').forEach(function (button) {
     button.addEventListener('click', function(){
