@@ -12,9 +12,9 @@ document.querySelector('.ac').addEventListener('click', function(){
     prenum = ''
     opr = ''
     result = 0;
-    console.log(eval('1+2*3+4'));
+    
 })
-document.querySelectorAll('.numbers-buttons button ').forEach(function (button) {
+document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
     button.addEventListener('click', function(){
         curnum = curnum + button.innerText;
         var txt = document.createTextNode(button.innerText);
@@ -26,6 +26,9 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
         var opr = document.createTextNode(' '+button.innerText+' ');
         var lastel = screen.innerText.slice(-1);
         if (!['+', '-', 'x', '/'].includes(lastel)){
+            if (opr == 'x'){
+                
+            }
             screen.appendChild(opr)
             
         }
@@ -52,3 +55,11 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
     })    
     
 })
+
+document.querySelector('.equal').addEventListener('click', function () {
+    var span = document.querySelector('span')
+    result = eval(span.innerText)
+    console.log(result);
+    span.innerText = result;
+
+});
