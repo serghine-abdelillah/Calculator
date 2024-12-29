@@ -43,11 +43,7 @@ h1 {
   width: 100%;
 }
 
-.result{
-  color: white;
-  height: 10px;
-  border: 1px solid white  ;
-}
+
 
 .buttons {
   display: flex;
