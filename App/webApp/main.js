@@ -26,40 +26,41 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
         var opr = document.createTextNode(' '+button.innerText+' ');
         var lastel = screen.innerText.slice(-1);
         if (!['+', '-', 'x', '/'].includes(lastel)){
-            if (opr == 'x'){
-                
-            }
             screen.appendChild(opr)
             
         }
-        switch (button.innerText) {
-            case "+":
-                var num = parseInt(curnum)
-                result = result + num ;
-                console.log(result)
-                break;
-            case '-':
-                
-                break;
-            case 'x':
-                
-                break;
-            case '/':
-                
-                break;
-        
-            default:
-                break;
+        if (opr === 'x'){
+            curnum += '*'
+        } else {
+            curnum += button.innerText;
         }
-        curnum = '';
+        // switch (button.innerText) {
+        //     case "+":
+        //         var num = parseInt(curnum)
+        //         result = result + num ;
+        //         console.log(result)
+        //         break;
+        //     case '-':
+                
+        //         break;
+        //     case 'x':
+                
+        //         break;
+        //     case '/':
+                
+        //         break;
+        
+        //     default:
+        //         break;
+        // }
+        // // curnum = '';
     })    
     
 })
 
 document.querySelector('.equal').addEventListener('click', function () {
-    var span = document.querySelector('span')
-    result = eval(span.innerText)
+    result = eval(curnum)
     console.log(result);
-    span.innerText = result;
+    screen.innerText = result;
 
 });
