@@ -4,27 +4,39 @@ var screen = document.querySelector('span');
 var curnum = ''
 var prenum = ''
 var opr = ''
-var result = 0;
+var result = null;
 var x = false ;
 
 
-if ()
+
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
     curnum = ''
     prenum = ''
     opr = ''
-    result = 0;
-    
-    
+    result = null;
 })
 document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
     button.addEventListener('click', function(){
-        curnum = curnum + button.innerText;
-        var txt = document.createTextNode(button.innerText);
-        screen.appendChild(txt);    
+        var lastel = screen.innerText.slice(-1);
+        if (result == null ) {
+            curnum = curnum + button.innerText;
+            var txt = document.createTextNode(button.innerText);
+            screen.appendChild(txt);    
+        } else if ( result != null && !['+', '-', 'x', '/'].includes(lastel) ) {
+            screen.innerText = '';
+            curnum = '';
+            curnum = curnum + button.innerText;
+            var txt = document.createTextNode(button.innerText);
+            screen.appendChild(txt); 
+            result = null;
+        } else if ( result != null && ['+', '-', 'x', '/'].includes(lastel)){
+            curnum = curnum + button.innerText;
+            var txt = document.createTextNode(button.innerText);
+            screen.appendChild(txt);
+        }
+        
     })});
-
 document.querySelectorAll('.operations-buttons button').forEach(function (button) {
     button.addEventListener('click', function () {
         var opr = document.createTextNode(' '+button.innerText+' ');
@@ -64,7 +76,5 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
 
 document.querySelector('.equal').addEventListener('click', function () {
     result = eval(curnum)
-    console.log(result);
     screen.innerText = result;
-    x = true;
 });
