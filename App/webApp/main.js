@@ -5,13 +5,17 @@ var curnum = ''
 var prenum = ''
 var opr = ''
 var result = 0;
+var x = false ;
 
+
+if ()
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
     curnum = ''
     prenum = ''
     opr = ''
     result = 0;
+    
     
 })
 document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
@@ -62,5 +66,5 @@ document.querySelector('.equal').addEventListener('click', function () {
     result = eval(curnum)
     console.log(result);
     screen.innerText = result;
-
+    x = true;
 });
