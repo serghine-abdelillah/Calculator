@@ -29,8 +29,8 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt); 
-            result = null;
         } else if ( result != null && ['+', '-', 'x', '/'].includes(lastel)){
+            result = null;
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);
