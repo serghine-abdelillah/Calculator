@@ -5,7 +5,7 @@ var curnum = ''
 var prenum = ''
 var opr = ''
 var result = null;
-var x = false ;
+var x = null ;
 
 
 
@@ -30,6 +30,8 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt); 
         } else if ( result != null && ['+', '-', 'x', '/'].includes(lastel)){
+            x = result;
+            result = null;
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);
@@ -74,11 +76,13 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
 })
 
 document.querySelector('.equal').addEventListener('click', function () {
-    if (opr == 'x'){
-        console.log('hi')
-    }else{
-        curnum = screen.innerText;
-        result = eval(curnum)
+    if (screen.innerText.includes('x')){
+        console.log('x');
+        var t = screen.innerText.replace('x', '*');
+        result = eval(t)
+        screen.innerText = result;
+    }else {
+        result = eval(screen.innerText)
         screen.innerText = result;
     }
     
