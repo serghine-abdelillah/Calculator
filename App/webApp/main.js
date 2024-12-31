@@ -30,7 +30,6 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt); 
         } else if ( result != null && ['+', '-', 'x', '/'].includes(lastel)){
-            result = null;
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);
