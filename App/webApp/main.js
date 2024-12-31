@@ -74,6 +74,12 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
 })
 
 document.querySelector('.equal').addEventListener('click', function () {
-    result = eval(curnum)
-    screen.innerText = result;
+    if (opr == 'x'){
+        console.log('hi')
+    }else{
+        curnum = screen.innerText;
+        result = eval(curnum)
+        screen.innerText = result;
+    }
+    
 });
