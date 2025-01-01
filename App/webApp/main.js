@@ -79,11 +79,21 @@ document.querySelector('.equal').addEventListener('click', function () {
     if (screen.innerText.includes('x')){
         console.log('x');
         var t = screen.innerText.replace('x', '*');
-        result = eval(t)
-        screen.innerText = result;
+        try {
+            result = eval(t)
+            screen.innerText = result;
+        } catch (error) {
+            screen.innerText = 'Error';
+        }
+        
     }else {
-        result = eval(screen.innerText)
-        screen.innerText = result;
+        try {
+            result = eval(screen.innerText)
+            screen.innerText = result;
+        } catch (error) {
+            screen.innerText = 'Error';
+        }
+       
     }
     
 });
