@@ -20,7 +20,6 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
     button.addEventListener('click', function(){
 
         if (curnum.includes('.') && button.innerText.includes('.')) {
-            console.log('hello')
             return;
         } else {
             
@@ -34,6 +33,7 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             curnum = '';
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
+            result = null;
             screen.appendChild(txt); 
         } else if ( result != null && ['+', '-', 'x', '/'].includes(lastel)){
             result = null;
