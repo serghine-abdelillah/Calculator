@@ -46,11 +46,7 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
             screen.appendChild(opr)
         }
         
-        if (button.innerText == 'x'){
-            curnum += '*';
-        } else {
-            curnum += button.innerText;
-        }
+        curnum = ''
         // switch (button.innerText) {
         //     case "+":
         //         var num = parseInt(curnum)
@@ -75,6 +71,10 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
     
 })
 
+
+document.querySelector('.point').addEventListener('click', function(){
+
+})
 document.querySelector('.equal').addEventListener('click', function () {
     if (screen.innerText.includes('x')){
         console.log('x');
