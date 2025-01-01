@@ -19,15 +19,12 @@ document.querySelector('.ac').addEventListener('click', function(){
 document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
     button.addEventListener('click', function(){
 
-        if (button.innerText.includes('.')) {
-            console.log('with point')
+        if (curnum.includes('.') && button.innerText.includes('.')) {
+            console.log('hello')
+            return;
         } else {
-            console.log('without point')
-    
             
-        }
-
-        var lastel = screen.innerText.slice(-1);
+            var lastel = screen.innerText.slice(-1);
         if (result == null ) {
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
@@ -44,6 +41,10 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);
         }
+            
+        }
+
+        
         
     })});
 document.querySelectorAll('.operations-buttons button').forEach(function (button) {
@@ -103,5 +104,5 @@ document.querySelector('.equal').addEventListener('click', function () {
         }
        
     }
-    
+    curnum = ''
 });
