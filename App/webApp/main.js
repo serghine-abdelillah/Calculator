@@ -4,7 +4,6 @@ var screen = document.querySelector('span');
 var curnum = ''
 var opr = ''
 var result = null;
-let x = null ;
 
 
 
@@ -60,7 +59,6 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
 
 document.querySelector('.equal').addEventListener('click', function () {
     if (screen.innerText.includes('x')){
-        console.log('x');
         var t = screen.innerText.replace('x', '*');
         try {
             result = eval(t)
