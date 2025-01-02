@@ -5,6 +5,8 @@ var curnum = ''
 var opr = ''
 var result = null;
 
+var divr = document.createElement('div')
+divr.setAttribute("class", "result");
 
 
 document.querySelector('.ac').addEventListener('click', function(){
@@ -62,7 +64,8 @@ document.querySelector('.equal').addEventListener('click', function () {
         var t = screen.innerText.replace('x', '*');
         try {
             result = eval(t)
-            screen.innerText = result;
+            divr.innerText = result;
+            screen.appendChild(divr)
         } catch (error) {
             screen.innerText = 'Error';
         }
@@ -70,10 +73,13 @@ document.querySelector('.equal').addEventListener('click', function () {
     }else {
         try {
             result = eval(screen.innerText)
-            screen.innerText = result;
+            divr.innerText = result;
+            screen.appendChild(divr)
+            screen.innerText = divr.innerText
         } catch (error) {
             screen.innerText = 'Error';
         }
     }
     curnum = ''
 });
+
