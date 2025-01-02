@@ -2,7 +2,6 @@
 // when click on button display message
 var screen = document.querySelector('span');
 var curnum = ''
-var prenum = ''
 var opr = ''
 var result = null;
 let x = null ;
@@ -12,7 +11,6 @@ let x = null ;
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
     curnum = ''
-    prenum = ''
     opr = ''
     result = null;
 })
@@ -56,33 +54,9 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
         }
         
         curnum = ''
-        // switch (button.innerText) {
-        //     case "+":
-        //         var num = parseInt(curnum)
-        //         result = result + num ;
-        //         console.log(result)
-        //         break;
-        //     case '-':
-                
-        //         break;
-        //     case 'x':
-                
-        //         break;
-        //     case '/':
-                
-        //         break;
-        
-        //     default:
-        //         break;
-        // }
-        // // curnum = '';
     })    
     
 })
-
-
-
-    
 
 document.querySelector('.equal').addEventListener('click', function () {
     if (screen.innerText.includes('x')){
@@ -102,7 +76,6 @@ document.querySelector('.equal').addEventListener('click', function () {
         } catch (error) {
             screen.innerText = 'Error';
         }
-       
     }
     curnum = ''
 });
