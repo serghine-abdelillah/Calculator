@@ -95,3 +95,7 @@ div .equal{
   background-color: #a8c7fa;
   color: #1f1f1f;
 }
+
+.screen{
+  transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
