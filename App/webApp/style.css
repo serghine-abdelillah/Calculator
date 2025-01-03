@@ -21,7 +21,7 @@ h1 {
 
 .shape {
   margin: auto;
-  width: 350px;
+  width: 295px;
   height: 450px;
   border-radius: 8px;
   border: 2px solid #444746;
@@ -79,11 +79,9 @@ button {
 }
 
 .numbers-buttons {
-  width: 300px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
-  margin-right: 50px;
 }
 
 .operations-buttons {
@@ -103,6 +101,7 @@ div .equal{
 .elements{
   display: flex;
   margin-left: 10px ;
+  justify-content: space-between;
 }
 
 .elements  button {
