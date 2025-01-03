@@ -100,7 +100,6 @@ div .equal{
 
 .elements{
   display: flex;
-  margin-left: 10px ;
   justify-content: space-between;
 }
 
