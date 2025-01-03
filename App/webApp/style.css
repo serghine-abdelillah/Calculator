@@ -99,3 +99,12 @@ div .equal{
 .screen{
   transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
+
+.elements{
+  display: flex;
+  margin-left: 10px ;
+}
+
+.elements  button {
+  width: 100px;
+}
