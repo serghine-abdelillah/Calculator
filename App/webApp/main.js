@@ -15,6 +15,10 @@ document.querySelector('.ac').addEventListener('click', function(){
     opr = ''
     result = null;
 })
+
+document.querySelector('.delete').addEventListener('click', function () {
+    
+})
 document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
     button.addEventListener('click', function(){
 
