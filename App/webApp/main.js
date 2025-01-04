@@ -4,7 +4,7 @@ var screen = document.querySelector('span');
 var curnum = ''
 var opr = ''
 var result = null;
-
+var lastel = screen.innerText.slice(-1);
 var divr = document.createElement('div')
 divr.setAttribute("class", "result");
 
@@ -17,7 +17,7 @@ document.querySelector('.ac').addEventListener('click', function(){
 })
 
 document.querySelector('.delete').addEventListener('click', function () {
-    
+    screen.innerText = screen.innerText.replace(lastel, '')
 })
 document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
     button.addEventListener('click', function(){
@@ -26,7 +26,7 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             return;
         } else {
             
-            var lastel = screen.innerText.slice(-1);
+            
         if (result == null ) {
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
