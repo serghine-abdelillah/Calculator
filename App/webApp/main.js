@@ -7,6 +7,7 @@ var result = null;
 var lastel = screen.innerText.slice(-1);
 var divr = document.createElement('div')
 divr.setAttribute("class", "result");
+let e = ''
 
 
 document.querySelector('.ac').addEventListener('click', function(){
@@ -17,7 +18,11 @@ document.querySelector('.ac').addEventListener('click', function(){
 })
 
 document.querySelector('.delete').addEventListener('click', function () {
-    screen.innerText = screen.innerText.replace(lastel, '')
+    e = screen.innerText
+    console.log(e.substring(0, str.length - 1)
+    );
+    // screen.innerText.slice(-1)
+    // = screen.innerText.replace(lastel, '')
 })
 document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
     button.addEventListener('click', function(){
