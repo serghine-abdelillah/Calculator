@@ -75,6 +75,7 @@ document.querySelector('.equal').addEventListener('click', function () {
             result = eval(t)
             div.innerText = result;
             screen.appendChild(div)
+            screen.innerText = div.innerText
         } catch (error) {
             screen.innerText = 'Error';
         }
