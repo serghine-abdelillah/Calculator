@@ -90,5 +90,6 @@ document.querySelector('.equal').addEventListener('click', function () {
         }
     }
     curnum = ''
+    result = null;
 });
 
