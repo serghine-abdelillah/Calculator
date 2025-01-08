@@ -5,8 +5,8 @@ var curnum = ''
 var opr = ''
 var result = null;
 var lastel = screen.innerText.slice(-1);
-var divr = document.createElement('div')
-divr.setAttribute("class", "result");
+var div = document.createElement('div')
+div.setAttribute("class", "result");
 let e = ''
 
 
@@ -73,8 +73,8 @@ document.querySelector('.equal').addEventListener('click', function () {
         var t = screen.innerText.replace('x', '*');
         try {
             result = eval(t)
-            divr.innerText = result;
-            screen.appendChild(divr)
+            div.innerText = result;
+            screen.appendChild(div)
         } catch (error) {
             screen.innerText = 'Error';
         }
@@ -82,9 +82,9 @@ document.querySelector('.equal').addEventListener('click', function () {
     }else {
         try {
             result = eval(screen.innerText)
-            divr.innerText = result;
-            screen.appendChild(divr)
-            screen.innerText = divr.innerText
+            div.innerText = result;
+            screen.appendChild(div)
+            screen.innerText = div.innerText
         } catch (error) {
             screen.innerText = 'Error';
         }
