@@ -7,21 +7,18 @@ html {
   height: 100%;
 }
 body {
-  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
     background-image: linear-gradient(to bottom right , rgb(11, 11, 172), rgb(4, 2, 32));
 }
 h1 {
   text-align: center;
   margin: 10px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
-    sans-serif;
   color: white;
 }
 
 .shape {
   margin: auto;
-  width: 295px;
+  width: 295px;     
   border-radius: 8px;
   border: 1px solid rgba(235, 235, 235, 0.1);
   background-color: #000000b5;
@@ -69,11 +66,6 @@ button {
   cursor: pointer;
 }
 
-.ac {
-  background-color: #a8c7fa;
-  color: #1f1f1f;
-}
-
 .operations-buttons > button {
   background-color: #2c303d;
   
@@ -90,7 +82,7 @@ button {
   flex-direction: column;
 }
 
-div .equal{
+div .equal, .ac{
   background-color: #a8c7fa;
   color: #1f1f1f;
 }
