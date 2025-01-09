@@ -34,11 +34,16 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
         } else {
             
             
-        if (result == null ) {
+        if (result == null && er == false) {
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);    
-        } else if ( result != null && !['+', '-', 'x', '/'].includes(lastel) ||  ) {
+        } else if (er){
+            screen.innerText = '';
+            var txt = document.createTextNode(button.innerText);
+            screen.appendChild(txt);
+            er = false;
+        }else if ( result != null && !['+', '-', 'x', '/'].includes(lastel)) {
             screen.innerText = '';
             curnum = '';
             curnum = curnum + button.innerText;
@@ -59,11 +64,19 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
     })});
 document.querySelectorAll('.operations-buttons button').forEach(function (button) {
     button.addEventListener('click', function () {
-        var opr = document.createTextNode(' '+button.innerText+' ');
-        var lastel = screen.innerText.slice(-1);
-        if (!['+', '-', 'x', '/'].includes(lastel)){
-            screen.appendChild(opr)
+        if (er){
+            screen.innerText = '';
+            var txt = document.createTextNode(button.innerText);
+            screen.appendChild(txt);
+            er = false;
+        } else{
+            var opr = document.createTextNode(' '+button.innerText+' ');
+            var lastel = screen.innerText.slice(-1);
+            if (!['+', '-', 'x', '/'].includes(lastel)){
+                screen.appendChild(opr)
+            }
         }
+        
         
         curnum = ''
     })    
@@ -79,8 +92,8 @@ document.querySelector('.equal').addEventListener('click', function () {
             screen.appendChild(div)
             screen.innerText = div.innerText
         } catch (error) {
-            screen.innerText = error;
-
+            screen.innerText = 'Error';
+            er = true;
         }
         
     }else {
@@ -91,6 +104,7 @@ document.querySelector('.equal').addEventListener('click', function () {
             screen.innerText = div.innerText
         } catch (error) {
             screen.innerText = 'Error';
+            er = true;
         }
     }
     curnum = ''
