@@ -82,7 +82,10 @@ button {
   flex-direction: column;
 }
 
-div .equal, .ac{
+div .equal,
+.ac ,
+div .equal:hover,
+.ac:hover{
   background-color: #a8c7fa;
   color: #1f1f1f;
 }
