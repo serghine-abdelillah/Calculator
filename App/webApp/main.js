@@ -8,6 +8,7 @@ var lastel = screen.innerText.slice(-1);
 var div = document.createElement('div')
 div.setAttribute("class", "result");
 let e = ''
+var er = false;
 
 
 document.querySelector('.ac').addEventListener('click', function(){
@@ -37,7 +38,7 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);    
-        } else if ( result != null && !['+', '-', 'x', '/'].includes(lastel) ) {
+        } else if ( result != null && !['+', '-', 'x', '/'].includes(lastel) ||  ) {
             screen.innerText = '';
             curnum = '';
             curnum = curnum + button.innerText;
@@ -78,7 +79,8 @@ document.querySelector('.equal').addEventListener('click', function () {
             screen.appendChild(div)
             screen.innerText = div.innerText
         } catch (error) {
-            screen.innerText = 'Error';
+            screen.innerText = error;
+
         }
         
     }else {
