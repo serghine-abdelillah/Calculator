@@ -76,8 +76,6 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
                 screen.appendChild(opr)
             }
         }
-        
-        
         curnum = ''
     })    
     
