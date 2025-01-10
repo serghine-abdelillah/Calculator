@@ -1,7 +1,6 @@
 // when click on div diplat message 
 // when click on button display message
 var screen = document.querySelector('span');
-var curnum = ''
 var opr = ''
 var result = null;
 var lastel = screen.innerText.slice(-1);
