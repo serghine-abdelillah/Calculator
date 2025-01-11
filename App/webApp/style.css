@@ -90,6 +90,9 @@ div .equal:hover,
   color: #1f1f1f;
 }
 
+.ac{
+  margin-left: 10px;
+}
 .screen{
   transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
 }
