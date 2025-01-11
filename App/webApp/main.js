@@ -23,7 +23,6 @@ document.querySelector('.delete').addEventListener('click', function () {
     console.log(e)
     console.log(
     );
-    // screen.innerText.slice(-1)
     screen.innerText = e.substring(0, e.length - 1)
 })
 document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
