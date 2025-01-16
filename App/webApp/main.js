@@ -96,6 +96,9 @@ document.querySelector('.equal').addEventListener('click', function () {
     }else {
         try {
             result = eval(screen.innerText)
+            if (result.equals('Infinity')) {
+                console.log('hi')
+            }
             div.innerText = result;
             screen.appendChild(div)
             screen.innerText = div.innerText
