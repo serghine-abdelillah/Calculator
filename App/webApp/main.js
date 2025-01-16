@@ -48,9 +48,13 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             result = null;
+            er = false;
+
             screen.appendChild(txt); 
         } else if ( result != null && ['+', '-', 'x', '/'].includes(lastel)){
             result = null;
+            er = false;
+
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);
@@ -75,6 +79,7 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
                 screen.appendChild(opr)
             }
         }
+        result = null
         curnum = ''
     })    
     

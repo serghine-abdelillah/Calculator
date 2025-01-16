@@ -28,7 +28,7 @@ h1 {
 .screen {
   margin: 5px;
   border: 1px solid #444746;
-  height: 50px;
+  height: 80px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
