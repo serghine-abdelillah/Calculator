@@ -96,9 +96,7 @@ document.querySelector('.equal').addEventListener('click', function () {
     }else {
         try {
             result = eval(screen.innerText)
-            if (result.equals('Infinity')) {
-                console.log('hi')
-            }
+            console.log(result)
             div.innerText = result;
             screen.appendChild(div)
             screen.innerText = div.innerText
@@ -108,6 +106,5 @@ document.querySelector('.equal').addEventListener('click', function () {
         }
     }
     curnum = ''
-    result = null;
 });
 
