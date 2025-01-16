@@ -97,13 +97,13 @@ document.querySelector('.equal').addEventListener('click', function () {
         try {
             result = eval(screen.innerText)
             if (result == 'Infinity') {
-                
                 screen.innerTex  = 'Error';
-                
+            } else{
+                div.innerText = result;
+                screen.appendChild(div)
+                screen.innerText = div.innerText
             }
-            div.innerText = result;
-            screen.appendChild(div)
-            screen.innerText = div.innerText
+            
         } catch (error) {
             screen.innerText = 'Error';
             er = true;
