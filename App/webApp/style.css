@@ -108,23 +108,22 @@ div .equal:hover,
 }
 
 .result{
-  color: #eef0ff;
-  margin: 5px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 @keyframes fadein {
-  0% {
-    opacity: 0;
-    transform: scale(0.9);
+  from {
+    transform: translateY(100%); /* Start from the bottom (fully hidden) */
+    opacity: 0; /* Optional: Fade in as it slides up */
   }
-  100% {
-    opacity: 1;
-    transform: scale(1);
+  to {
+    transform: translateY(0); /* End at the normal position */
+    opacity: 1; /* Fully visible */
   }
+
 }
 
 .result{
-  animation: fadein 0.3s ease;
+  animation: fadein 0.3s ease-out;
 }
 
