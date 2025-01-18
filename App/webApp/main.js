@@ -77,6 +77,10 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
             var opr = document.createTextNode(' '+button.innerText+' ');
             var lastel = screen.innerText.slice(-1);
             if (!['+', '-', 'x', '/'].includes(lastel)){
+                if (result != null) {
+                    console.log('hi')
+                    screen.innerText = result
+                }
                 screen.appendChild(opr)
                 div.remove()
             }
