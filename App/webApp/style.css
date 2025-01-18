@@ -108,6 +108,8 @@ div .equal:hover,
 }
 
 .result{
+  color: #eef0ff;
+  margin: 5px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 

@@ -1,6 +1,7 @@
 // when click on div diplat message 
 // when click on button display message
 var screen = document.querySelector('span');
+var screenresult = document.querySelector('.screen');
 var curnum = ''
 var opr = ''
 var result = null;
@@ -77,6 +78,7 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
             var lastel = screen.innerText.slice(-1);
             if (!['+', '-', 'x', '/'].includes(lastel)){
                 screen.appendChild(opr)
+                div.remove()
             }
         }
         result = null
@@ -106,7 +108,7 @@ document.querySelector('.equal').addEventListener('click', function () {
             } else{
                 div.innerText = `Ans = ${result}`;
                 screen.appendChild(div)
-                // screen.innerText = div.innerText
+                //screen.innerText = div.innerText
             }            
         } catch (error) {
             screen.innerText = 'Error';
