@@ -34,8 +34,6 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
         if (curnum.includes('.') && button.innerText.includes('.')) {
             return;
         } else {
-            
-            
         if (result == null && er == false) {
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
@@ -62,7 +60,6 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);
         }
-            
         }
 
         
@@ -123,4 +120,5 @@ document.querySelector('.equal').addEventListener('click', function () {
     }
     curnum = ''
 });
+
 
