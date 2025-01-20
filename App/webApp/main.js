@@ -8,7 +8,6 @@ var result = null;
 var lastel = screen.innerText.slice(-1);
 var div = document.createElement('div')
 div.setAttribute("class", "result");
-let e = ''
 var er = false;
 
 
@@ -23,7 +22,7 @@ document.querySelector('.delete').addEventListener('click', function () {
     if(result != null ){
         screen.innerText = '';
     }else{
-        e = screen.innerText
+        e = screen.innerText 
         console.log(e)
         screen.innerText = e.substring(0, e.length - 1)
     }
