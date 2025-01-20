@@ -18,6 +18,10 @@ document.querySelector('.ac').addEventListener('click', function(){
     result = null;
 })
 
+
+document.querySelector('.hi').addEventListener('click', function () {
+    screen.innerText = 'Really, you test a calulator'
+})
 document.querySelector('.delete').addEventListener('click', function () {
     if(result != null ){
         screen.innerText = '';
