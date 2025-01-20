@@ -93,9 +93,7 @@ div .equal:hover,
 .ac{
   margin-left: 10px;
 }
-.screen{
-  transition:cubic-bezier(0.895, 0.03, 0.685, 0.22);
-}
+
 
 .elements{
   display: flex;
@@ -125,5 +123,5 @@ div .equal:hover,
 
 .result{
   animation: fadein 0.3s ease-out;
+  color: rgb(202, 202, 202);
 }
-
