@@ -122,6 +122,7 @@ div .equal:hover,
 }
 
 .result{
+margin-top:10px;
   animation: fadein 0.3s ease-out;
   color: rgb(202, 202, 202);
 }
