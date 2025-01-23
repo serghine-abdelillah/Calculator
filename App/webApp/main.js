@@ -65,8 +65,6 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
         }
         }
 
-        
-        
     })});
 document.querySelectorAll('.operations-buttons button').forEach(function (button) {
     button.addEventListener('click', function () {
