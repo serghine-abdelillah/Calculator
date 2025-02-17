@@ -128,7 +128,7 @@ div .equal:hover,
   color: white;
   position: absolute;
   top: 50%;
-  font-size: large;
+  font-size: 24px;
   font-weight: bold;
   right: 10%;
 }
