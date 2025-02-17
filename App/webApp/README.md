@@ -1,2 +1,3 @@
 # calculator as a Web Application
-Implemnet a calcualtor using HTML, CSS, JavaScript
+Implement a calcualtor using HTML, CSS, JavaScript \
+the app contain the main functionalities
