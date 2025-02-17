@@ -96,7 +96,7 @@ document.querySelector('.equal').addEventListener('click', function () {
         var t = screen.innerText.replace('x', '*');
         try {
             result = eval(t)
-            div.innerText = `Ans = ${result}`;
+            div.innerText = `${result}`;
             screen.appendChild(div)
         } catch (error) {
             screen.innerText = 'Error';
