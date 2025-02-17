@@ -109,7 +109,7 @@ document.querySelector('.equal').addEventListener('click', function () {
             if (result == 'Infinity') {
                 screen.innerText  = 'Error dividing by zero';
             } else{
-                div.innerText = `Ans = ${result}`;
+                div.innerText = `${result}`;
                 screen.appendChild(div)
                 //screen.innerText = div.innerText
             }            
