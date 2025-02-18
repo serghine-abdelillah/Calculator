@@ -106,10 +106,6 @@ div .equal:hover,
   width: 100px;
 }
 
-.result{
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
 @keyframes fadein {
   from {
     transform: translateY(100%); /* Start from the bottom (fully hidden) */
@@ -123,6 +119,7 @@ div .equal:hover,
 }
 
 .result{
+  transition: transform 0.3s ease, opacity 0.3s ease;
   margin-top:10px;
   animation: fadein 0.3s ease-out;
   color: white;
