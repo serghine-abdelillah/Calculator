@@ -1,5 +1,3 @@
-// when click on div diplat message 
-// when click on button display message
 var screen = document.querySelector('span');
 var screenresult = document.querySelector('.screen');
 var curnum = ''
@@ -9,7 +7,7 @@ var lastel = screen.innerText.slice(-1);
 var div = document.createElement('div')
 div.setAttribute("class", "result");
 var er = false;
-
+var r = false
 
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
@@ -21,6 +19,7 @@ document.querySelector('.ac').addEventListener('click', function(){
 
 document.querySelector('.hi').addEventListener('click', function () {
     screen.innerText = 'Really, you test a calulator'
+    r = true
 })
 document.querySelector('.delete').addEventListener('click', function () {
     if(result != null ){
@@ -68,11 +67,10 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
     })});
 document.querySelectorAll('.operations-buttons button').forEach(function (button) {
     button.addEventListener('click', function () {
-        if (er){
+        if (er || r){
             screen.innerText = '';
-            var txt = document.createTextNode(button.innerText);
-            screen.appendChild(txt);
             er = false;
+            r = false;
         } else{
             var opr = document.createTextNode(' '+button.innerText+' ');
             var lastel = screen.innerText.slice(-1);

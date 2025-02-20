@@ -136,8 +136,8 @@ div .equal:hover,
   animation: fadein 0.3s ease-out;
   color: white;
   position: absolute;
-  top: 50%;
+  top: 40%;
   font-size: 24px;
   font-weight: bold;
-  right: 10%;
+  right: 5%;
 }
