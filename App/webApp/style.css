@@ -23,7 +23,9 @@ h1 {
 @media (max-width : 575px){
   .shape{
     margin-top:50px !important; 
-    /* display: none; */
+  }
+  h1{
+    margin-top:50px !important; 
   }
 }
 .shape {
