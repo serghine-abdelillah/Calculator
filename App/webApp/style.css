@@ -16,9 +16,16 @@ body {
 h1 {
   text-align: center;
   margin: 10px;
+  margin-top: 20px;
   color: white;
 }
 
+@media (max-width : 575px){
+  .shape{
+    margin-top:50px !important; 
+    /* display: none; */
+  }
+}
 .shape {
   margin: auto;
   width: 295px;     
