@@ -1,22 +1,19 @@
 # Calculator
-Implement A Simple Calculator ( + , - , * , / ) Using Different Programming Languages 
+A simple calculator that supports addition (+), subtraction (-), multiplication (*), and division (/) implemented in multiple programming languages.
 
-## Structure of the project
-In the terminal folder : \
-All the files run on the terminal \
-In the App folder there is an app that runs in the web, mobile and desktop
+## Project Structure
+- **Terminal folder:**  
+  Contains files that can be executed directly in the terminal.  
+- **App folder:**  
+  Includes a cross-platform application that runs on the web, mobile, and desktop.
 
-## Running 
-You can run this project in your local machine by cloning the project and installing the languages you need. \
-Test the web App [Here](https://serghine-abdelillah.github.io/Calculator/) 
+## Running the Project  
+To run this project on your local machine, clone the repository and install the required programming languages.  
 
-## Steps to run the files from VS code
- 1 - Install VScode or any editor you like \
- 2 - clone the repository using `git clone` \
- 3 - open VS code \
- 4 - Run file and enjoy
+Test the web app [here](https://serghine-abdelillah.github.io/Calculator/).  
 
-
-
-
-
+## Steps to Run the Files in VS Code
+1. Install **VS Code** or any other editor of your choice.  
+2. Clone the repository using `git clone`.  
+3. Open **VS Code**.  
+4. Run the file and enjoy!  
