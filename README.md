@@ -8,6 +8,7 @@ In the App folder there is an app that runs in the web, mobile and desktop
 
 ## Running 
 You can run this project in your local machine by cloning the project and installing the languages you need 
+Test the web App [Here]()
 
 ## Steps to run the files from VS code
  1 - Install VScode or any editor you like \
