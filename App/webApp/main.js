@@ -97,6 +97,7 @@ document.querySelector('.equal').addEventListener('click', function () {
             var t = screen.innerText.replace('x', '*');
             try {
                 result = eval(t)
+                console.log(result)
                 div.innerText = `${result}`;
                 screen.appendChild(div)
             } catch (error) {
@@ -107,13 +108,12 @@ document.querySelector('.equal').addEventListener('click', function () {
         }else {
             try {
                 result = eval(screen.innerText)
-                if (result == 'Infinity') {
+                if (result == 'Infinity' || 'NaN') {
                     screen.innerText  = 'Error dividing by zero';
                     er = true;
                 } else{
                     div.innerText = `${result}`;
                     screen.appendChild(div)
-                    //screen.innerText = div.innerText
                 }            
             } catch (error) {
                 screen.innerText = 'Error';
