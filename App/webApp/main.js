@@ -90,31 +90,38 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
 })
 
 document.querySelector('.equal').addEventListener('click', function () {
-    if (screen.innerText.includes('x')){
-        var t = screen.innerText.replace('x', '*');
-        try {
-            result = eval(t)
-            div.innerText = `${result}`;
-            screen.appendChild(div)
-        } catch (error) {
-            screen.innerText = 'Error';
-            er = true;
-        }
-        
-    }else {
-        try {
-            result = eval(screen.innerText)
-            if (result == 'Infinity') {
-                screen.innerText  = 'Error dividing by zero';
-            } else{
+    if (er == true) {
+        screen.innerText = '';
+        er = false;
+    } else if (screen.innerText.includes('x')){
+            var t = screen.innerText.replace('x', '*');
+            try {
+                result = eval(t)
                 div.innerText = `${result}`;
                 screen.appendChild(div)
-                //screen.innerText = div.innerText
-            }            
-        } catch (error) {
-            screen.innerText = 'Error';
-            er = true;
+            } catch (error) {
+                screen.innerText = 'Error';
+                er = true;
+            }
+            
+        }else {
+            try {
+                result = eval(screen.innerText)
+                if (result == 'Infinity') {
+                    screen.innerText  = 'Error dividing by zero';
+                    er = true;
+                } else{
+                    div.innerText = `${result}`;
+                    screen.appendChild(div)
+                    //screen.innerText = div.innerText
+                }            
+            } catch (error) {
+                screen.innerText = 'Error';
+                er = true;
+            }
         }
+        curnum = ''
+        
     }
-    curnum = ''
-});
+    
+);
