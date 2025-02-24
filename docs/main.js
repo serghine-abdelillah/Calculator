@@ -91,7 +91,7 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
 document.querySelector('.equal').addEventListener('click', function () {
     if (er == true) {
         screen.innerText = '';
-        er = false;
+        
     } else {
         if (screen.innerText.includes('x')){
             var t = screen.innerText.replace('x', '*');
@@ -106,18 +106,20 @@ document.querySelector('.equal').addEventListener('click', function () {
             
         }else {
             try {
-                result = eval(screen.innerText)
-                console.log(result)
-               
-                if (result == 'Infinity' || isNaN(result) ) {
-                    screen.innerText  = 'Error dividing by zero';
-                    er = true;
-                    
-                } else{
+                if (er != true) {
+                    result = eval(screen.innerText)
+                    console.log(result)
+                    if (result == 'Infinity' || isNaN(result) ) {
+                        screen.innerText  = 'Error dividing by zero';
+                        er = true;
+                        result = null
+                    } else {
                     div.innerText = `${result}`;
                     screen.appendChild(div)
-                }            
-            } catch (error) {
+                    
+                
+                    }
+                }} catch (error) {
                 screen.innerText = 'Error';
                 er = true;
             }
