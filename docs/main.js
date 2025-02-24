@@ -26,7 +26,6 @@ document.querySelector('.delete').addEventListener('click', function () {
         screen.innerText = '';
     }else{
         e = screen.innerText 
-        console.log(e)
         screen.innerText = e.substring(0, e.length - 1)
     }
 })
@@ -91,7 +90,6 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
 document.querySelector('.equal').addEventListener('click', function () {
     if (er == true) {
         screen.innerText = '';
-        
     } else {
         if (screen.innerText.includes('x')){
             var t = screen.innerText.replace('x', '*');
@@ -103,12 +101,10 @@ document.querySelector('.equal').addEventListener('click', function () {
                 screen.innerText = 'Error';
                 er = true;
             }
-            
         }else {
             try {
                 if (er != true) {
                     result = eval(screen.innerText)
-                    console.log(result)
                     if (result == 'Infinity' || isNaN(result) ) {
                         screen.innerText  = 'Error dividing by zero';
                         er = true;
@@ -116,18 +112,12 @@ document.querySelector('.equal').addEventListener('click', function () {
                     } else {
                     div.innerText = `${result}`;
                     screen.appendChild(div)
-                    
-                
                     }
                 }} catch (error) {
                 screen.innerText = 'Error';
                 er = true;
             }
         }
-        
-        
         curnum = ''
-        
     }
-    
 });
