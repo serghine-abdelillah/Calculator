@@ -7,7 +7,7 @@ var lastel = screen.innerText.slice(-1);
 var div = document.createElement('div')
 div.setAttribute("class", "result");
 var er = false;
-var r = false
+
 
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
@@ -19,7 +19,7 @@ document.querySelector('.ac').addEventListener('click', function(){
 
 document.querySelector('.hi').addEventListener('click', function () {
     screen.innerText = 'Really, you test a calulator'
-    r = true
+    er = true
 })
 document.querySelector('.delete').addEventListener('click', function () {
     if(result != null ){
@@ -66,10 +66,10 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
     })});
 document.querySelectorAll('.operations-buttons button').forEach(function (button) {
     button.addEventListener('click', function () {
-        if (er || r){
+        if (er){
             screen.innerText = '';
             er = false;
-            r = false;
+            
         } else{
             var opr = document.createTextNode(' '+button.innerText+' ');
             var lastel = screen.innerText.slice(-1);
