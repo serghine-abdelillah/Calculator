@@ -20,6 +20,7 @@ document.querySelector('.ac').addEventListener('click', function(){
 document.querySelector('.hi').addEventListener('click', function () {
     screen.innerText = 'Really, you test a calulator'
     er = true
+    result = null
 })
 document.querySelector('.delete').addEventListener('click', function () {
     if(result != null ){
@@ -91,6 +92,16 @@ document.querySelector('.equal').addEventListener('click', function () {
     if (er == true) {
         screen.innerText = '';
     } else {
+
+        if (!/^[0-9+\-x/.\s]+$/.test(t)){
+            console.log('hi')
+        }
+        if( er == true){
+
+            // make condition to check if there is an error and make the result null 
+
+        }
+        
         if (screen.innerText.includes('x')){
             var t = screen.innerText.replace('x', '*');
             try {
