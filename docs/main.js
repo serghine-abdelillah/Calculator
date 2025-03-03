@@ -93,21 +93,18 @@ document.querySelector('.equal').addEventListener('click', function () {
         screen.innerText = '';
     } else {
 
-        if (!/^[0-9+\-x/.\s]+$/.test(t)){
-            console.log('hi')
-        }
-        if( er == true){
-
-            // make condition to check if there is an error and make the result null 
-
-        }
-        
+       
         if (screen.innerText.includes('x')){
             var t = screen.innerText.replace('x', '*');
             try {
-                result = eval(t)
-                div.innerText = `${result}`;
-                screen.appendChild(div)
+                if (/^[0-9+\-*/.\s]+$/.test(t)){
+                    result = eval(t)
+                    div.innerText = `${result}`;
+                    screen.appendChild(div)
+                }else{
+                    return;
+                }
+                
             } catch (error) {
                 screen.innerText = 'Error';
                 er = true;
@@ -115,7 +112,8 @@ document.querySelector('.equal').addEventListener('click', function () {
         }else {
             try {
                 if (er != true) {
-                    result = eval(screen.innerText)
+                    if (/^[0-9+\-*/.\s]+$/.test(screen.innerText)){
+                        result = eval(screen.innerText)
                     if (result == 'Infinity' || isNaN(result) ) {
                         screen.innerText  = 'Error dividing by zero';
                         er = true;
@@ -124,6 +122,10 @@ document.querySelector('.equal').addEventListener('click', function () {
                     div.innerText = `${result}`;
                     screen.appendChild(div)
                     }
+                    }else{
+                        return;
+                    }
+                    
                 }} catch (error) {
                 screen.innerText = 'Error';
                 er = true;
