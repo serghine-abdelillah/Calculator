@@ -63,7 +63,6 @@ div button:hover{
   margin: 5px;
 }
 
-
 button {
   width: 60px;
   height: 60px;
@@ -107,7 +106,6 @@ div .equal:hover,
   margin-left: 10px;
 }
 
-
 .elements{
   display: flex;
   justify-content: space-between;
@@ -120,12 +118,12 @@ div .equal:hover,
 
 @keyframes fadein {
   from {
-    transform: translateY(100%); /* Start from the bottom (fully hidden) */
-    opacity: 0; /* Optional: Fade in as it slides up */
+    transform: translateY(100%); 
+    opacity: 0; 
   }
   to {
-    transform: translateY(0); /* End at the normal position */
-    opacity: 1; /* Fully visible */
+    transform: translateY(0); 
+    opacity: 1; 
   }
 
 }

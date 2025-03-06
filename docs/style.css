@@ -122,8 +122,8 @@ div .equal:hover,
     opacity: 0; 
   }
   to {
-    transform: translateY(0); /* End at the normal position */
-    opacity: 1; /* Fully visible */
+    transform: translateY(0); 
+    opacity: 1; 
   }
 
 }

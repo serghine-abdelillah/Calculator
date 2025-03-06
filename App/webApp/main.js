@@ -8,7 +8,6 @@ var div = document.createElement('div')
 div.setAttribute("class", "result");
 var er = false;
 
-
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
     curnum = ''
@@ -16,10 +15,10 @@ document.querySelector('.ac').addEventListener('click', function(){
     result = null;
 })
 
-
 document.querySelector('.hi').addEventListener('click', function () {
     screen.innerText = 'Really, you test a calulator'
     er = true
+    result = null
 })
 document.querySelector('.delete').addEventListener('click', function () {
     if(result != null ){
@@ -31,7 +30,6 @@ document.querySelector('.delete').addEventListener('click', function () {
 })
 document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(function (button) {
     button.addEventListener('click', function(){
-
         if (curnum.includes('.') && button.innerText.includes('.')) {
             return;
         } else {
@@ -69,7 +67,6 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
         if (er){
             screen.innerText = '';
             er = false;
-            
         } else{
             var opr = document.createTextNode(' '+button.innerText+' ');
             var lastel = screen.innerText.slice(-1);
@@ -91,12 +88,19 @@ document.querySelector('.equal').addEventListener('click', function () {
     if (er == true) {
         screen.innerText = '';
     } else {
+
+       
         if (screen.innerText.includes('x')){
             var t = screen.innerText.replace('x', '*');
             try {
-                result = eval(t)
-                div.innerText = `${result}`;
-                screen.appendChild(div)
+                if (/^[0-9+\-*/.\s]+$/.test(t)){
+                    result = eval(t)
+                    div.innerText = `${result}`;
+                    screen.appendChild(div)
+                }else{
+                    return;
+                }
+                
             } catch (error) {
                 screen.innerText = 'Error';
                 er = true;
@@ -104,7 +108,8 @@ document.querySelector('.equal').addEventListener('click', function () {
         }else {
             try {
                 if (er != true) {
-                    result = eval(screen.innerText)
+                    if (/^[0-9+\-*/.\s]+$/.test(screen.innerText)){
+                        result = eval(screen.innerText)
                     if (result == 'Infinity' || isNaN(result) ) {
                         screen.innerText  = 'Error dividing by zero';
                         er = true;
@@ -112,6 +117,9 @@ document.querySelector('.equal').addEventListener('click', function () {
                     } else {
                     div.innerText = `${result}`;
                     screen.appendChild(div)
+                    }
+                    }else{
+                        return;
                     }
                 }} catch (error) {
                 screen.innerText = 'Error';
