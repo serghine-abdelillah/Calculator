@@ -98,6 +98,8 @@ document.querySelector('.equal').addEventListener('click', function () {
                     div.innerText = `${result}`;
                     screen.appendChild(div)
                 }else{
+                    screen.innerText = 'Error';
+                    er = true;
                     return;
                 }
                 
@@ -119,6 +121,8 @@ document.querySelector('.equal').addEventListener('click', function () {
                     screen.appendChild(div)
                     }
                     }else{
+                        screen.innerText = 'Error';
+                        er = true;
                         return;
                     }
                 }} catch (error) {
