@@ -11,7 +11,7 @@ A simple calculator that supports addition (+), subtraction (-), multiplication 
 To run this project on your local machine, clone the repository and install the required programming languages.  
 
 Test the web app [here](https://serghine-abdelillah.github.io/Calculator/). 
-(if you find any errors don't 
+(if you find any errors don't hesitate to report them, Thank you (-_-))
 
 ## Steps to Run the Files in VS Code
 1. Install **VS Code** or any other editor of your choice.  
