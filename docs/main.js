@@ -49,18 +49,15 @@ document.querySelectorAll('.numbers-buttons button:not(.equal) ').forEach(functi
             var txt = document.createTextNode(button.innerText);
             result = null;
             er = false;
-
             screen.appendChild(txt); 
         } else if ( result != null && ['+', '-', 'x', '/'].includes(lastel)){
             result = null;
             er = false;
-
             curnum = curnum + button.innerText;
             var txt = document.createTextNode(button.innerText);
             screen.appendChild(txt);
         }
         }
-
     })});
 document.querySelectorAll('.operations-buttons button').forEach(function (button) {
     button.addEventListener('click', function () {
@@ -88,8 +85,6 @@ document.querySelector('.equal').addEventListener('click', function () {
     if (er == true) {
         screen.innerText = '';
     } else {
-
-       
         if (screen.innerText.includes('x')){
             var t = screen.innerText.replace('x', '*');
             try {
