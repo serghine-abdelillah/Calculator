@@ -8,6 +8,41 @@ var div = document.createElement('div')
 div.setAttribute("class", "result");
 var er = false;
 
+
+function calculate(t) {
+    try {
+        if (/^[0-9+\-*/.\s]+$/.test(t)){
+            result = eval(t)
+            if (result == 'Infinity' || isNaN(result) ) {
+                screen.innerText  = 'Error dividing by zero';
+                er = true;
+                result = null
+            } else {
+                div.innerText = `${result}`;
+                screen.appendChild(div)
+            }
+        }else{
+            screen.innerText = 'Error';
+            er = true;
+            return;
+        }
+        
+    } catch (error) {
+        screen.innerText = 'Error';
+        er = true;
+    }
+    
+    let length = String(result).length
+    if (length > 10){
+        div.style.fontSize = "18px"
+    } else if (length > 20){
+        div.style.fontSize = "14px"
+    } else{
+        div.style.fontSize = "24px"
+    }
+}
+
+
 document.querySelector('.ac').addEventListener('click', function(){
     screen.innerText = '';
     curnum = ''
@@ -87,41 +122,11 @@ document.querySelector('.equal').addEventListener('click', function () {
     } else {
         if (screen.innerText.includes('x')){
             var t = screen.innerText.replace('x', '*');
-            try {
-                if (/^[0-9+\-*/.\s]+$/.test(t)){
-                    result = eval(t)
-                    div.innerText = `${result}`;
-                    console.log(result.length)
-                    screen.appendChild(div)
-                }else{
-                    screen.innerText = 'Error';
-                    er = true;
-                    return;
-                }
-                
-            } catch (error) {
-                screen.innerText = 'Error';
-                er = true;
-            }
+            calculate(t)
         }else {
             try {
                 if (er != true) {
-                    if (/^[0-9+\-*/.\s]+$/.test(screen.innerText)){
-                        result = eval(screen.innerText)
-                        if (result == 'Infinity' || isNaN(result) ) {
-                            screen.innerText  = 'Error dividing by zero';
-                            er = true;
-                            result = null
-                        } else {
-                            div.innerText = `${result}`;
-                            console.log(String(result).length)
-                            screen.appendChild(div)
-                        }
-                    }else{
-                        screen.innerText = 'Error';
-                        er = true;
-                        return;
-                    }
+                    calculate(screen.innerText)
                 }} catch (error) {
                 screen.innerText = 'Error';
                 er = true;
