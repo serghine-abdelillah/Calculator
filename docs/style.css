@@ -46,6 +46,8 @@ h1 {
   flex-direction: column;
   overflow-x: hidden; 
   overflow-y: hidden;
+  text-wrap-mode: nowrap;
+
 }
 
 .screen span {
@@ -138,4 +140,5 @@ div .equal:hover,
   font-size: 24px;
   font-weight: bold;
   right: 5%;
+  font-size: clamp(10px, 5vw, 24px); /* Adjust based on the container */
 }

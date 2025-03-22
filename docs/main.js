@@ -63,7 +63,7 @@ document.querySelectorAll('.operations-buttons button').forEach(function (button
     button.addEventListener('click', function () {
         if (er){
             screen.innerText = '';
-            er = false;
+            er = false; 
         } else{
             var opr = document.createTextNode(' '+button.innerText+' ');
             var lastel = screen.innerText.slice(-1);
@@ -91,6 +91,7 @@ document.querySelector('.equal').addEventListener('click', function () {
                 if (/^[0-9+\-*/.\s]+$/.test(t)){
                     result = eval(t)
                     div.innerText = `${result}`;
+                    console.log(result.length)
                     screen.appendChild(div)
                 }else{
                     screen.innerText = 'Error';
@@ -107,14 +108,15 @@ document.querySelector('.equal').addEventListener('click', function () {
                 if (er != true) {
                     if (/^[0-9+\-*/.\s]+$/.test(screen.innerText)){
                         result = eval(screen.innerText)
-                    if (result == 'Infinity' || isNaN(result) ) {
-                        screen.innerText  = 'Error dividing by zero';
-                        er = true;
-                        result = null
-                    } else {
-                    div.innerText = `${result}`;
-                    screen.appendChild(div)
-                    }
+                        if (result == 'Infinity' || isNaN(result) ) {
+                            screen.innerText  = 'Error dividing by zero';
+                            er = true;
+                            result = null
+                        } else {
+                            div.innerText = `${result}`;
+                            console.log(String(result).length)
+                            screen.appendChild(div)
+                        }
                     }else{
                         screen.innerText = 'Error';
                         er = true;
