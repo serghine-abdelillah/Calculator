@@ -33,10 +33,8 @@ function calculate(t) {
     }
     
     let length = String(result).length
-    if (length > 10){
+    if (length > 20){
         div.style.fontSize = "18px"
-    } else if (length > 20){
-        div.style.fontSize = "14px"
     } else{
         div.style.fontSize = "24px"
     }

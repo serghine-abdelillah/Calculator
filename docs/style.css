@@ -40,7 +40,7 @@ h1 {
 .screen {
   margin: 5px;
   border: 1px solid #444746;
-  height: 60px;
+  height: 65px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -133,6 +133,7 @@ div .equal:hover,
 .result{
   transition: transform 0.3s ease, opacity 0.3s ease;
   margin-top:10px;
+  padding: 5px;
   animation: fadein 0.3s ease-out;
   color: white;
   position: absolute;
