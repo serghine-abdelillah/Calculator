@@ -13,6 +13,7 @@ function calculate(t) {
     try {
         if (/^[0-9+\-*/.\s]+$/.test(t)){
             result = eval(t)
+            console.log(String(result).length)
             if (result == 'Infinity' || isNaN(result) ) {
                 screen.innerText  = 'Error dividing by zero';
                 er = true;
@@ -33,8 +34,11 @@ function calculate(t) {
     }
     
     let length = String(result).length
-    if (length > 20){
+    
+    if (length > 10){
         div.style.fontSize = "18px"
+    } else if (length > 20){
+        div.style.fontSize = "14px"
     } else{
         div.style.fontSize = "24px"
     }
