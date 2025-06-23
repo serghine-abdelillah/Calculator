@@ -11,7 +11,17 @@ var er = false;
 
 function calculate(t) {
     try {
-        
+        if (/^[0-9+\-*/.\s]+$/.test(t)){
+            result = eval(t)
+            console.log(String(result).length)
+            if (result == 'Infinity' || isNaN(result) ) {
+                screen.innerText  = 'Error dividing by zero';
+                er = true;
+                result = null
+            } else {
+                div.innerText = `${result}`;
+                screen.appendChild(div)
+            }
         }else{
             screen.innerText = 'Error';
             er = true;
