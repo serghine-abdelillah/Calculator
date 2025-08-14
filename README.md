@@ -18,3 +18,6 @@ If you find any errors don't hesitate to report them, Thank you (-_-)
 2. Clone the repository using `git clone`.  
 3. Open **VS Code**.  
 4. Run the file and enjoy!  
+
+----
+What I learned : basic implementation of JS functinoalities and DOM manipulation.
